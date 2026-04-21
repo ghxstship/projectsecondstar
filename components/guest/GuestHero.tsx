@@ -1,10 +1,10 @@
 import { BOOKING_URL } from "@/lib/config";
 
 const meta = [
-  { label: "Status", value: "Sailing June 2026" },
+  { label: "First Horizon", value: "June 2026" },
   { label: "Home Port", value: "Miami Beach Marina" },
-  { label: "Format", value: "Saturday / 10 to 6" },
-  { label: "Capacity", value: "12 Seats / Vessel" },
+  { label: "Cadence", value: "Saturdays / Sunrise to Sunset" },
+  { label: "Capacity", value: "12 Seats per Vessel" },
 ];
 
 export default function GuestHero() {

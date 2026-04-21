@@ -5,7 +5,7 @@ export default function Marquee() {
     "Sunrise Breathwork",
     "Soft Club Sets",
     "Founder Flotillas",
-    "Curated Day Format",
+    "Skyline Return",
   ];
   const doubled = [...items, ...items];
 

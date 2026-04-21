@@ -44,9 +44,12 @@ export default function Sailings() {
                     {s.seatsLabel}
                   </span>
                 </div>
-                <h3 className="font-display text-[40px] uppercase leading-[0.95] tracking-[-0.01em]">
+                <h3 className="mb-4 font-display text-[40px] uppercase leading-[0.95] tracking-[-0.01em]">
                   {s.theme}
                 </h3>
+                <p className="text-[14px] leading-relaxed text-[#C5C5C0]">
+                  {s.tagline}
+                </p>
               </div>
               <a
                 href={BOOKING_URL}

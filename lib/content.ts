@@ -318,6 +318,7 @@ export type SailingStatus = "open" | "waitlist";
 export type Sailing = {
   date: string;
   theme: string;
+  tagline: string;
   seatsLabel: string;
   status: SailingStatus;
 };
@@ -354,37 +355,38 @@ export const guestIncluded: IncludedItem[] = [
   {
     num: "01",
     name: "Captained Vessel",
-    detail: "8 hours / 12-seat maximum",
+    detail: "Eight hours on the water, twelve seats, one crew per vessel",
   },
   {
     num: "02",
-    name: "Full-Day Food & Beverage",
-    detail: "Functional NA menu + premium bar",
+    name: "All-Day Bar & Kitchen",
+    detail: "Functional NA menu, adaptogen tonics, and a full spirits program",
   },
   {
     num: "03",
-    name: "Curated DJ",
-    detail: "Daytime residency program, live on deck",
+    name: "Resident DJ",
+    detail: "Daytime residency program, soft-club tempo, live on deck",
   },
   {
     num: "04",
-    name: "Professional Photography",
-    detail: "Delivered to inbox in 72 hours",
+    name: "Content Delivery",
+    detail: "A photo edit and short film to your inbox within 72 hours",
   },
   {
     num: "05",
     name: "Hosted Programming",
-    detail: "Embarkation to disembarkation",
+    detail: "Choreographed dock to dock, nothing left to improvise",
   },
   {
     num: "06",
     name: "Recovery Kit",
-    detail: "Sun, hydration, small rituals",
+    detail: "Reef-safe sun, hydration, small rituals for the return leg",
   },
   {
     num: "07",
     name: "Optional After-Hours",
-    detail: "Partnered Ocean Drive extension",
+    detail:
+      "A partnered Ocean Drive extension for the crew who aren't ready to call it",
   },
 ];
 
@@ -392,36 +394,48 @@ export const guestSailings: Sailing[] = [
   {
     date: "June 6, 2026",
     theme: "Launch Flotilla",
+    tagline:
+      "Inaugural sail. Full production, extended crew, the first horizon on record.",
     seatsLabel: "4 seats left",
     status: "open",
   },
   {
     date: "June 13, 2026",
     theme: "Founders Edition",
+    tagline:
+      "Operators, builders, and the occasional investor. Curated balance, long conversations, no pitch decks.",
     seatsLabel: "Waitlist",
     status: "waitlist",
   },
   {
     date: "June 20, 2026",
     theme: "Recovery Flotilla",
+    tagline:
+      "Breathwork-led morning, adaptogen bar, zero-proof afternoon. The longevity set's Saturday.",
     seatsLabel: "8 seats left",
     status: "open",
   },
   {
     date: "June 27, 2026",
     theme: "Pride Edition",
+    tagline:
+      "A soft-club celebration for the Miami queer creative set. Guest-hosted, partner-curated, loud on purpose.",
     seatsLabel: "2 seats left",
     status: "open",
   },
   {
     date: "July 4, 2026",
     theme: "Independence Sundowner",
+    tagline:
+      "Sunset return across the skyline, extended DJ block, fireworks from the water.",
     seatsLabel: "Waitlist",
     status: "waitlist",
   },
   {
     date: "July 11, 2026",
     theme: "Open Flotilla",
+    tagline:
+      "Solo seats encouraged, mixed crew, the classic HVRBR.CLUB format without a theme overlay.",
     seatsLabel: "11 seats left",
     status: "open",
   },
