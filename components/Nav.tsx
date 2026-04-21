@@ -26,7 +26,7 @@ export default function Nav() {
         href="#"
         className="font-display text-[32px] leading-none text-ink no-underline"
       >
-        HVRBR<span className="text-cyan">.CLUB</span>
+        HVRBOR.CLUB<span className="text-cyan">.</span>
       </a>
 
       <div className="flex items-center gap-3 md:gap-8">

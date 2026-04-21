@@ -1,6 +1,6 @@
-# HVRBR.CLUB
+# HVRBOR.CLUB
 
-**Miami's flotilla, one day at a time.** A GHXSTSHIP brand launching June 2026.
+**Saturdays are for the sea.** A GHXSTSHIP brand launching June 2026.
 
 Investor / partner / sponsor launch page built in Next.js 15 with the App Router, TypeScript, and Tailwind CSS. Follows the GHXSTSHIP Contemporary Minimal Pop Art design system: monochromatic base with cyan accent, Anton / Bebas Neue / Share Tech Mono typography, zero emojis, three-pixel borders, hard geometric shadows.
 
@@ -151,13 +151,18 @@ When you pick this up in Claude Code, the usual first-pass things to tackle:
 
 **Contact**
 
-- Press: `press@hvrbr.club`
-- Partnerships: `partnerships@hvrbr.club`
-- Careers: `careers@hvrbr.club`
+- Press: `press@hvrbor.club`
+- Crew: `hello@hvrbor.club`
 
-### Boilerplate (copy-ready, 45 words)
+### Boilerplate (copy-ready, 48 words)
 
-> HVRBR.CLUB is a curated Saturday flotilla across Biscayne Bay — eight hours of programming from sunrise to sunset, twelve seats per vessel, one soundtrack, one horizon. Anchored in wellness, music, community, and Miami's founder economy. Sailing from Miami Beach Marina, launching June 2026. A GHXSTSHIP brand.
+> HVRBOR.CLUB is a curated Miami flotilla — eight hours across Biscayne Bay, twelve seats per boat, one Saturday at a time. Miami Beach Marina out, Haulover Sandbar in the middle, Stiltsville on the way back. A soundtrack that knows what time it is. Launching June 2026. A GHXSTSHIP brand.
+
+### Tagline
+
+> Saturdays are for the sea.
+
+Lowercase "sea", period (not exclamation). Never paraphrase.
 
 ### Brand Assets
 
@@ -165,10 +170,10 @@ Downloadable assets live in `/public/press/` and are served from the site root.
 
 | File | Purpose | Status |
 | --- | --- | --- |
-| `hvrbr-club-colors.json` | Canonical color palette (hex + semantic roles) | Locked |
-| `hvrbr-club-wordmark.svg` | Primary wordmark, SVG with font-as-paths | **Pending final export from design** |
-| `hvrbr-club-wordmark-mono.svg` | Single-color variant (no cyan accent) | Pending |
-| `hvrbr-club-lockup@2x.png` | Raster fallback, 2x density | Pending |
+| `hvrbor-club-colors.json` | Canonical color palette (hex + semantic roles) | Locked |
+| `hvrbor-club-wordmark.svg` | Primary wordmark, SVG with font-as-paths | **Pending final export from design** |
+| `hvrbor-club-wordmark-mono.svg` | Single-color variant (no cyan accent) | Pending |
+| `hvrbor-club-lockup@2x.png` | Raster fallback, 2x density | Pending |
 
 When the design team exports the final wordmark, drop the SVG into `/public/press/` with the filename above. The table updates itself — no other code changes needed.
 
@@ -176,4 +181,4 @@ When the design team exports the final wordmark, drop the SVG into `/public/pres
 
 ## License
 
-Proprietary. HVRBR.CLUB LLC / A GHXSTSHIP Brand. All rights reserved.
+Proprietary. HVRBOR LLC / A GHXSTSHIP Brand. All rights reserved.

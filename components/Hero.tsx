@@ -19,8 +19,8 @@ export default function Hero() {
       </div>
 
       {/* Title */}
-      <h1 className="font-display uppercase text-[clamp(52px,13vw,220px)] leading-[0.85] tracking-[-0.02em] mt-5 relative">
-        HVRBR<span className="text-cyan">.CLUB</span>
+      <h1 className="font-display uppercase text-[clamp(44px,11vw,200px)] leading-[0.85] tracking-[-0.02em] mt-5 relative">
+        HVRBOR.CLUB<span className="text-cyan">.</span>
       </h1>
 
       {/* Sub row */}

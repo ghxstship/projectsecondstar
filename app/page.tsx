@@ -5,7 +5,7 @@ import Manifesto from "@/components/guest/Manifesto";
 import Timeline from "@/components/Timeline";
 import Experience from "@/components/guest/Experience";
 import Included from "@/components/guest/Included";
-import Sailings from "@/components/guest/Sailings";
+import Calendar from "@/components/guest/Calendar";
 import FAQ from "@/components/guest/FAQ";
 import BookingCTA from "@/components/guest/BookingCTA";
 import GuestFooter from "@/components/guest/GuestFooter";
@@ -20,7 +20,7 @@ export default function Home() {
       <Timeline />
       <Experience />
       <Included />
-      <Sailings />
+      <Calendar />
       <FAQ />
       <BookingCTA />
       <GuestFooter />

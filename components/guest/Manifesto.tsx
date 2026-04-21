@@ -10,26 +10,30 @@ export default function Manifesto() {
           <br />
           rent boats.
           <br />
-          We program
+          We write
           <br />
-          days<span className="text-cyan">.</span>
+          chapters<span className="text-cyan">.</span>
         </h2>
 
         <div className="flex flex-col gap-6 pt-2 md:pt-8">
           <p className="text-[18px] leading-relaxed">
             Miami has more charters than any coastline in America. What it
-            didn't have was a product. Eight hours of chaos on a rented yacht is
-            not an experience. It's an afternoon you regret by Monday.
+            didn't have was a plot.
           </p>
           <p className="text-[18px] leading-relaxed">
-            HVRBR.CLUB operates differently. Every sailing is choreographed from
-            dock to dock. The route is set. The soundtrack is curated. The food
-            is intentional. The people on your boat are there for the same
-            reason you are.
+            Eight hours of chaos on a rented yacht is not a memory. It's an
+            afternoon you regret by Monday and a security deposit you're
+            texting about Tuesday.
+          </p>
+          <p className="text-[18px] leading-relaxed">
+            HVRBOR runs the other direction. Every Episode is set end to end.
+            The route is planned. The music fits the hour. The food is real
+            food. The people on your boat are there for the same reason you
+            are. That last part is not an accident.
           </p>
           <p className="font-sub text-[28px] leading-snug tracking-wide">
-            This is what a Miami Saturday can be when someone actually designs
-            it.
+            This is a Miami Saturday with a producer credit. SEAson 1 has
+            eight Episodes. Casting is open.
           </p>
         </div>
       </div>

@@ -33,8 +33,8 @@ export default function Contact() {
     status === "idle"
       ? "Send →"
       : status === "sending"
-      ? "Sending..."
-      : "Received / 48hr Reply";
+      ? "Casting off..."
+      : "Seat held. We'll handle the rest.";
 
   return (
     <section id="contact" className="bg-paper px-5 py-[140px] md:px-10">

@@ -1,5 +1,5 @@
 // ====================================================================
-// HVRBR.CLUB CONTENT DATA
+// HVRBOR.CLUB CONTENT DATA
 // ====================================================================
 // Central source of truth for pillar copy, timeline acts, fleet
 // scaling phases, and audience positioning. Edit here instead of
@@ -165,7 +165,7 @@ export const phases: Phase[] = [
     period: "September 2026 — May 2027",
     title: "The Flotilla Begins",
     obj: "Three vessels sailing together. The raft-up starts here.",
-    desc: "Three is the minimum viable flotilla. This is the moment HVRBR.CLUB stops being a better charter and starts being the Yacht Week equivalent. We expand to Saturday and Sunday public sailings, introduce themed monthly programs, launch price laddering, and hire our first full-time ops team. Winter operates on a curated corporate and private charter mix — demand stays steady year-round.",
+    desc: "Three is the minimum viable flotilla. This is the moment HVRBOR.CLUB stops being a better charter and starts being the Yacht Week equivalent. We expand to Saturday and Sunday public sailings, introduce themed monthly programs, launch price laddering, and hire our first full-time ops team. Winter operates on a curated corporate and private charter mix — demand stays steady year-round.",
     vessels: "03",
     capacity: "36",
     capacityUnit: "/ Day",
@@ -199,7 +199,7 @@ export const phases: Phase[] = [
     period: "2028 onward",
     title: "Beyond Miami",
     obj: "Fleet-as-a-service. Format licensing. Multi-city.",
-    desc: "HVRBR.CLUB productizes into a deployable format for other markets. Tampa Bay, Austin and Lake Travis, Lake of the Ozarks, San Diego, Long Beach, Lake Lanier, plus seasonal overlays in BVI and Ibiza. Three expansion vectors run in parallel: owned geographic replication, format licensing to local charter operators, and event overlay service into festivals and conferences. The platform is the business.",
+    desc: "HVRBOR.CLUB productizes into a deployable format for other markets. Tampa Bay, Austin and Lake Travis, Lake of the Ozarks, San Diego, Long Beach, Lake Lanier, plus seasonal overlays in BVI and Ibiza. Three expansion vectors run in parallel: owned geographic replication, format licensing to local charter operators, and event overlay service into festivals and conferences. The platform is the business.",
     vessels: "Multi-city",
     capacity: "500+",
     capacityUnit: "/ Day",
@@ -233,7 +233,7 @@ export const audiences: Audience[] = [
     pitchHighlight: "proven platform",
     pitchPost:
       " — launching into Miami's deepest year-round demand window.",
-    body: "HVRBR.CLUB is a new entity nested under GHXSTSHIP Industries, a production and technology company with 13+ years of operations across 52 countries and live event credentials spanning Formula 1, EDC, Ultra, PATRÓN, Red Bull, and Heineken. HVRBR.CLUB is capital-light by design — vessels are chartered, not owned, in the pilot and scaling phases. We're raising against a proven operating team, not a thesis.",
+    body: "HVRBOR.CLUB is a new entity nested under GHXSTSHIP Industries, a production and technology company with 13+ years of operations across 52 countries and live event credentials spanning Formula 1, EDC, Ultra, PATRÓN, Red Bull, and Heineken. HVRBOR.CLUB is capital-light by design — vessels are chartered, not owned, in the pilot and scaling phases. We're raising against a proven operating team, not a thesis.",
     boxLabel: "Current Round",
     boxTitle: "$300K Pre-Seed",
     boxDesc:
@@ -256,7 +256,7 @@ export const audiences: Audience[] = [
     pitchPre: "We don't compete with Miami's best rooms. We ",
     pitchHighlight: "extend them onto the water.",
     pitchPost: "",
-    body: "HVRBR.CLUB is a complementary layer to the Miami hospitality, wellness, and members-club ecosystem. Partner venues get a curated on-water channel for their members, a seasonal content destination, and a new category of programming that doesn't exist in their four walls. The flotilla becomes a satellite of your brand for a day.",
+    body: "HVRBOR.CLUB is a complementary layer to the Miami hospitality, wellness, and members-club ecosystem. Partner venues get a curated on-water channel for their members, a seasonal content destination, and a new category of programming that doesn't exist in their four walls. The flotilla becomes a satellite of your brand for a day.",
     boxLabel: "Partner Categories",
     boxTitle: "Co-Branded Day Programs",
     boxDesc:
@@ -279,7 +279,7 @@ export const audiences: Audience[] = [
     pitchPre: "Brand activation on water hits different — because ",
     pitchHighlight: "nobody scrolls on a boat.",
     pitchPost: "",
-    body: "HVRBR.CLUB's audience is captive for eight hours in a designed, content-rich environment. The ROI math is simple: every guest produces multiples of their ticket value in organic content, and every sponsor integration lives inside that content in a way paid social can't replicate. We build tiered activation structures against the season, individual sailings, and single-activation moments.",
+    body: "HVRBOR.CLUB's audience is captive for eight hours in a designed, content-rich environment. The ROI math is simple: every guest produces multiples of their ticket value in organic content, and every sponsor integration lives inside that content in a way paid social can't replicate. We build tiered activation structures against the season, individual sailings, and single-activation moments.",
     boxLabel: "Activation Tiers",
     boxTitle: "Season / Sailing / Moment",
     boxDesc:
@@ -313,14 +313,40 @@ export type IncludedItem = {
   detail: string;
 };
 
-export type SailingStatus = "open" | "waitlist";
+export type EpisodeStatusType =
+  | "standby"
+  | "critical"
+  | "limited"
+  | "available";
 
-export type Sailing = {
+export type GuestEpisode = {
+  id: string;
+  episodeNumber: string;
+  episodeLabel: string;
   date: string;
-  theme: string;
+  day: string;
+  year: string;
+  destination: string;
+  itinerary: "A" | "B";
+  itineraryLabel: string;
+  status: string;
+  statusType: EpisodeStatusType;
   tagline: string;
-  seatsLabel: string;
-  status: SailingStatus;
+  description: string;
+  signatureMoment: string;
+  culturalOverlay: string;
+};
+
+export type ItinerarySlot = {
+  time: string;
+  action: string;
+};
+
+export type Itinerary = {
+  label: string;
+  duration: string;
+  description: string;
+  slots: ItinerarySlot[];
 };
 
 export type GuestFaq = {
@@ -332,154 +358,303 @@ export const guestPillars: GuestPillar[] = [
   {
     num: "/ 01",
     title: "Start Clean.",
-    body: "Mornings on HVRBR.CLUB don't start at the bar. They start with breathwork on the foredeck, hydration from a functional adaptogen bar, and a founder's dose of silence on the water before Miami wakes up. Arrive tired. Leave reset.",
+    body: "Mornings don't start at the bar. They start with breathwork on the foredeck, a functional bar with adaptogens that actually do something, and about forty-five minutes of calm water before Miami gets loud. Show up tired. Leave reset. The sandwich is coming.",
   },
   {
     num: "/ 02",
     title: "Move With The Room.",
-    body: "Our DJs understand daylight. No one is screaming over a 2 AM bassline. Just the right tempo at the right hour, engineered for eight-hour stamina. Soft-club energy, Biscayne Bay edition.",
+    body: "Our DJs understand daylight. Nobody is screaming over a 2 AM bassline at noon. Right tempo at the right hour, built to last eight hours without blowing you out by three. You will not need a second wind.",
   },
   {
     num: "/ 03",
     title: "Meet The Crew.",
-    body: "The people on your boat are not an accident. Every sailing is curated — founders, operators, creatives, and the occasional person you've been trying to meet for six months. The most valuable conversation of your year might happen at the sandbar.",
+    body: "The people on your Episode are not a coincidence. Every Episode is balanced for energy — founders, operators, creatives, and the occasional person you've been trying to get in a room with for six months. The most useful conversation of your year might happen standing in ankle-deep water. Bring a card if you still carry one.",
   },
   {
     num: "/ 04",
     title: "End Full.",
-    body: "Sunset return along the skyline, final set from your DJ, a content package delivered to your inbox within 72 hours, and an optional after-hours extension at a partnered Ocean Drive room. You'll still be talking about it Wednesday.",
+    body: "Sunset return along the skyline. Final set from your DJ. A content package in your inbox within 72 hours. Optional extension at a partnered Ocean Drive room if you're not done. Your group chat will be useless on Wednesday. We accept no responsibility for what happens in the group chat on Wednesday.",
   },
 ];
 
 export const guestIncluded: IncludedItem[] = [
   {
     num: "01",
-    name: "Captained Vessel",
-    detail: "Eight hours on the water, twelve seats, one crew per vessel",
+    name: "Vessel",
+    detail: "Captained, 8 hours, 12-seat flotilla",
   },
   {
     num: "02",
-    name: "All-Day Bar & Kitchen",
-    detail: "Functional NA menu, adaptogen tonics, and a full spirits program",
+    name: "Food",
+    detail: "Full day, real kitchen, not a cheese plate",
   },
   {
     num: "03",
-    name: "Resident DJ",
-    detail: "Daytime residency program, soft-club tempo, live on deck",
+    name: "Bar",
+    detail: "Spirits list plus a full functional NA bar",
   },
   {
     num: "04",
-    name: "Content Delivery",
-    detail: "A photo edit and short film to your inbox within 72 hours",
+    name: "Soundtrack",
+    detail: "Resident DJ, daytime programming, not a playlist",
   },
   {
     num: "05",
-    name: "Hosted Programming",
-    detail: "Choreographed dock to dock, nothing left to improvise",
+    name: "Photography",
+    detail: "In your inbox within 72 hours",
   },
   {
     num: "06",
-    name: "Recovery Kit",
-    detail: "Reef-safe sun, hydration, small rituals for the return leg",
+    name: "Hosting",
+    detail: "Dock to dock, we handle it",
   },
   {
     num: "07",
-    name: "Optional After-Hours",
-    detail:
-      "A partnered Ocean Drive extension for the crew who aren't ready to call it",
+    name: "Recovery Kit",
+    detail: "Sun, hydration, the small rituals",
+  },
+  {
+    num: "08",
+    name: "After-Hours",
+    detail: "Optional partnered room on Ocean Drive",
   },
 ];
 
-export const guestSailings: Sailing[] = [
+export const guestEpisodes: GuestEpisode[] = [
   {
-    date: "June 6, 2026",
-    theme: "Launch Flotilla",
-    tagline:
-      "Inaugural sail. Full production, extended crew, the first horizon on record.",
-    seatsLabel: "4 seats left",
-    status: "open",
+    id: "s1e01-the-origin",
+    episodeNumber: "01",
+    episodeLabel: "Episode 01",
+    date: "June 20",
+    day: "Saturday",
+    year: "2026",
+    destination: "The Origin",
+    itinerary: "A",
+    itineraryLabel: "6 hours on yacht",
+    status: "Standby",
+    statusType: "standby",
+    tagline: "The first page of the Log. The Saturday it all begins.",
+    description:
+      "Every ship has a first day. Every Crew has an Origin. SEAson 1 opens on the longest Saturday of the year — six hours on the water, brunch before, Dockside Social after. The bottle breaks at sunset. You were on it.",
+    signatureMoment: "The Christening — a bottle across the bow at sunset.",
+    culturalOverlay: "FIFA World Cup opening weekend / Uruguay vs Cape Verde",
   },
   {
-    date: "June 13, 2026",
-    theme: "Founders Edition",
-    tagline:
-      "Operators, builders, and the occasional investor. Curated balance, long conversations, no pitch decks.",
-    seatsLabel: "Waitlist",
-    status: "waitlist",
+    id: "s1e02-the-lost-meridian",
+    episodeNumber: "02",
+    episodeLabel: "Episode 02",
+    date: "July 4",
+    day: "Saturday",
+    year: "2026",
+    destination: "The Lost Meridian",
+    itinerary: "A",
+    itineraryLabel: "6 hours on yacht",
+    status: "2 seats left",
+    statusType: "critical",
+    tagline: "Fourth of July, on the water, without the face paint.",
+    description:
+      "A Saturday Fourth of July only happens every seven years. The Crew sails to find a meridian America has misplaced. Florida seafood, domestic spirits only, the American songbook at the right tempo, and an annual flag raised at sunset — commissioned from a Miami artist, gifted to one Crew member by raffle. Off the water by seven so you can find a rooftop.",
+    signatureMoment: "The Flagpoint — a Miami artist's flag raised at sunset.",
+    culturalOverlay:
+      "Fourth of July on Saturday / Mid-World Cup knockout rounds",
   },
   {
-    date: "June 20, 2026",
-    theme: "Recovery Flotilla",
+    id: "s1e03-the-sunken-cathedral",
+    episodeNumber: "03",
+    episodeLabel: "Episode 03",
+    date: "July 18",
+    day: "Saturday",
+    year: "2026",
+    destination: "The Sunken Cathedral",
+    itinerary: "B",
+    itineraryLabel: "4 hours on yacht",
+    status: "Standby",
+    statusType: "standby",
     tagline:
-      "Breathwork-led morning, adaptogen bar, zero-proof afternoon. The longevity set's Saturday.",
-    seatsLabel: "8 seats left",
-    status: "open",
+      "The people building what Miami becomes next, standing on shared ground.",
+    description:
+      "A curated Episode for the founders, operators, and people charting Miami's next decade. Itinerary B — four concentrated hours, balanced for stage and category. One Sandbar Standup at 4:20 PM: 90 seconds, no pitches, no decks, ankle-deep at The Sunken Cathedral. The most useful Saturday of your quarter, engineered to respect it.",
+    signatureMoment: "The Sandbar Standup — 90 seconds each, no pitches.",
+    culturalOverlay: "FIFA World Cup Bronze Final Day",
   },
   {
-    date: "June 27, 2026",
-    theme: "Pride Edition",
+    id: "s1e04-the-forgotten-feast",
+    episodeNumber: "04",
+    episodeLabel: "Episode 04",
+    date: "August 1",
+    day: "Saturday",
+    year: "2026",
+    destination: "The Forgotten Feast",
+    itinerary: "A",
+    itineraryLabel: "6 hours on yacht",
+    status: "6 seats left",
+    statusType: "available",
     tagline:
-      "A soft-club celebration for the Miami queer creative set. Guest-hosted, partner-curated, loud on purpose.",
-    seatsLabel: "2 seats left",
-    status: "open",
+      "One chef. One prix-fixe. One route the city stopped telling people about.",
+    description:
+      "The Crew opens Miami Spice on the water. Itinerary A. One partnered chef on board for the full day, serving the sunset course personally at 6:20 PM. Three courses, a proper wine list, Biscayne Bay at its clearest during the city's best food month. The Forgotten Feast gets found.",
+    signatureMoment: "The Chef's Course — served personally at sunset.",
+    culturalOverlay: "Miami Spice opening day / August 1",
   },
   {
-    date: "July 4, 2026",
-    theme: "Independence Sundowner",
-    tagline:
-      "Sunset return across the skyline, extended DJ block, fireworks from the water.",
-    seatsLabel: "Waitlist",
-    status: "waitlist",
+    id: "s1e05-the-stolen-gallery",
+    episodeNumber: "05",
+    episodeLabel: "Episode 05",
+    date: "August 15",
+    day: "Saturday",
+    year: "2026",
+    destination: "The Stolen Gallery",
+    itinerary: "B",
+    itineraryLabel: "4 hours on yacht",
+    status: "4 seats left",
+    statusType: "limited",
+    tagline: "Queer-led, summer-peak, everyone welcome.",
+    description:
+      "A Miami summer Pride Episode the way it should be run. Itinerary B. Queer DJ curation from the Space residents lineage, a partnered local nonprofit, ten percent of every seat donated. An annual flag commissioned from a queer Miami artist, raised at 4:20 PM. No corporate choreography, no rainbow wrap, no parade route. A designed Saturday, programmed by the community that built Miami's best parties.",
+    signatureMoment:
+      "The Colors Reveal — artist flag raised, donation announced.",
+    culturalOverlay: "Summer Pride / mid-summer peak",
   },
   {
-    date: "July 11, 2026",
-    theme: "Open Flotilla",
-    tagline:
-      "Solo seats encouraged, mixed crew, the classic HVRBR.CLUB format without a theme overlay.",
-    seatsLabel: "11 seats left",
-    status: "open",
+    id: "s1e06-the-phantom-peninsula",
+    episodeNumber: "06",
+    episodeLabel: "Episode 06",
+    date: "August 29",
+    day: "Saturday",
+    year: "2026",
+    destination: "The Phantom Peninsula",
+    itinerary: "A",
+    itineraryLabel: "6 hours on yacht",
+    status: "8 seats left",
+    statusType: "available",
+    tagline: "The Saturday the water gives you back.",
+    description:
+      "The late-August Episode everyone needs. Itinerary A. Breathwork on the foredeck, a functional bar running as the main bar, a lighter menu built to feel good on Sunday. One minute of silence at golden hour — sixty seconds, nothing else, The Phantom Peninsula briefly visible. The Saturday you've earned.",
+    signatureMoment:
+      "The Still Minute — sixty seconds of nothing, at golden hour.",
+    culturalOverlay: "Pre-Labor Day approach",
+  },
+  {
+    id: "s1e07-the-future-archives",
+    episodeNumber: "07",
+    episodeLabel: "Episode 07",
+    date: "September 12",
+    day: "Saturday",
+    year: "2026",
+    destination: "The Future Archives",
+    itinerary: "B",
+    itineraryLabel: "4 hours on yacht",
+    status: "10 seats left",
+    statusType: "available",
+    tagline: "The people who chart what Miami becomes, on record.",
+    description:
+      "An Episode for the directors, photographers, editors, designers, and musicians making the Miami the rest of the world sees. Itinerary B. Analog photography station on board, film processed and mailed in your content package. One 4x5 group portrait at 4:20 PM — one frame, one exposure, framed prints delivered 60 days later. The pre-Basel conversation, filed for the future.",
+    signatureMoment:
+      "The Analog Exposure — one 4x5 frame, framed prints mailed 60 days later.",
+    culturalOverlay: "Pre-Hispanic Heritage Month / Pre-Art Basel build-up",
+  },
+  {
+    id: "s1-finale-the-last-harbor",
+    episodeNumber: "Finale",
+    episodeLabel: "Finale",
+    date: "October 10",
+    day: "Saturday",
+    year: "2026",
+    destination: "The Last Harbor",
+    itinerary: "A",
+    itineraryLabel: "6 hours on yacht",
+    status: "5 seats left",
+    statusType: "limited",
+    tagline: "The year's only toast. The final page of the first book.",
+    description:
+      "SEAson 1 closes the way we want to open SEAson 2. Itinerary A. Standby list priority opens 48 hours before public casting. SEAson-recap film shot on the day, released at Art Basel to open SEAson 2 casting. The single toast of the year at 6:20 PM — read aloud: the Episode count, the Crew total, the Log entries. The Saturday that earns Saturday's reputation.",
+    signatureMoment:
+      "The SEAson Toast — the year's only toast, read aloud.",
+    culturalOverlay:
+      "Hispanic Heritage Month + Miami Carnival + Columbus Day weekend",
   },
 ];
+
+export const itineraries: Record<"A" | "B", Itinerary> = {
+  A: {
+    label: "Itinerary A",
+    duration: "6 hours on yacht",
+    description: "The long day. Reserved for tentpole Episodes.",
+    slots: [
+      { time: "11:00 AM", action: "HVRBOR.CLUB Opens" },
+      { time: "11:30 AM", action: "Brunch by the Bay" },
+      { time: "1:00 PM", action: "Embark" },
+      { time: "1:30 PM", action: "Sailaway Ceremony" },
+      { time: "3:30 PM", action: "Sandbar Arrival" },
+      { time: "5:30 PM", action: "Back on Board" },
+      { time: "6:20 PM", action: "Signature Moment" },
+      { time: "6:50 PM", action: "Debark" },
+      { time: "7:00 PM", action: "Dockside Social" },
+      { time: "8:00 PM", action: "HVRBOR.CLUB Closes" },
+    ],
+  },
+  B: {
+    label: "Itinerary B",
+    duration: "4 hours on yacht",
+    description:
+      "The short set. For Episodes where the room matters more than the duration.",
+    slots: [
+      { time: "11:00 AM", action: "HVRBOR.CLUB Opens" },
+      { time: "11:30 AM", action: "Brunch by the Bay" },
+      { time: "1:00 PM", action: "Embark" },
+      { time: "1:30 PM", action: "Sailaway Ceremony" },
+      { time: "4:20 PM", action: "Signature Moment" },
+      { time: "4:50 PM", action: "Debark" },
+      { time: "5:00 PM", action: "Dockside Social" },
+      { time: "6:00 PM", action: "HVRBOR.CLUB Closes" },
+    ],
+  },
+};
 
 export const guestFaqs: GuestFaq[] = [
   {
     question: "Do I need to know anyone to book?",
     answer:
-      "No. HVRBR.CLUB is designed for solo seat buyers just as much as groups. Every sailing is curated to balance energy, so you'll walk off knowing names worth knowing.",
+      "No. Half the seats on any Episode are solo buyers. Every Episode is balanced for energy, not cliques. You'll walk off knowing names worth knowing.",
   },
   {
     question: "Is this a party boat?",
     answer:
-      "No. HVRBR.CLUB is a designed day experience. Music is part of it. So is breathwork, food, conversation, and content. Guests who show up looking for a bottle-service cruise are typically disappointed.",
+      "No. Music is part of it. So is breathwork, food, conversation, and a functional bar. Guests who show up expecting a bottle-service cruise are typically disappointed. We consider this a feature.",
   },
   {
     question: "What if I don't drink?",
     answer:
-      "You'll be well taken care of. HVRBR.CLUB runs a fully-stocked functional NA bar with adaptogens, tonics, and craft non-alcoholic cocktails alongside the spirits list. Sober-curious guests are a core part of every sailing.",
+      "You're covered. HVRBOR.CLUB runs a full functional NA bar alongside the spirits list \u2014 adaptogens, nootropics, real craft work, not a can of seltzer someone forgot about. Sober-curious guests are a core part of every Episode. Nobody asks why.",
   },
   {
     question: "What should I wear?",
     answer:
-      "Swim under, something you'd wear to a Miami rooftop over. A light layer for the return leg. We send a prep note with specifics 48 hours before your sailing.",
+      "Swim under. Something you'd wear to a Miami rooftop over. A light layer for the ride back. We send a prep note 48 hours out with the specifics. Nothing requires a suit.",
   },
   {
     question: "What if the weather turns?",
     answer:
-      "Miami afternoons can surprise anyone. The day is structured to complete the peak experience before typical storm windows, and every sailing has an abort-to-marina plan built into the route. If a sailing is fully cancelled, you get a credit that rolls into any future HVRBR.CLUB date.",
+      "Miami afternoons have opinions. The day is built to finish the peak experience before the usual storm windows, and every route has an abort-to-marina plan the captain already knows by heart. If an Episode is fully cancelled, your seat becomes a credit you can roll into any future date.",
   },
   {
     question: "Can I book the whole boat?",
     answer:
-      "Yes. Private charters are available for 6\u201312 guests at a flat rate. Bachelorettes, birthdays, corporate off-sites, wedding weekends. The \u201cBook\u201d flow handles private inquiries too \u2014 select the private option at checkout.",
+      "Yes. We call it a Bottle Episode \u2014 private charters run 6\u201312 guests at a flat rate. Bachelorettes, birthdays, corporate offsites, wedding welcome days. Same programming standard. You just pick the room.",
   },
   {
     question: "Where does it depart?",
     answer:
-      "Miami Beach Marina. Exact slip and check-in details are sent 48 hours before your sailing.",
+      "Miami Beach Marina. Exact slip and check-in details land in your inbox 48 hours out. Park at Lincoln Road and walk. Don't drive into the marina, you'll regret it.",
   },
   {
     question: "Do you sail year-round?",
     answer:
-      "Our primary public sailing season is May through October. November through April runs on a private-charter and themed-sailing calendar. Sign up for the list to be notified when winter dates open.",
+      "Public season runs May through October. November through April runs on Bottle Episodes and themed Episodes. Sign up for the list and we'll let you know when winter dates open. The list is short. We intend to keep it that way.",
+  },
+  {
+    question: "What's a SEAson?",
+    answer:
+      "SEAson 1 is our first eight Episodes \u2014 the calendar of voyages running June 20 through October 10, 2026. Biweekly Saturdays. Every Episode is its own destination. The Crew who sails SEAson 1 becomes the founding cast. SEAson 2 casting opens at Art Basel in December.",
   },
 ];

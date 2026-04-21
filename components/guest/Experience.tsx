@@ -8,12 +8,12 @@ export default function Experience() {
       className="bg-paper px-5 py-20 text-ink md:px-10 md:py-[120px]"
     >
       <SectionHeader
-        num="02 / What Happens"
+        num="02 / The Day"
         title={
           <>
             Four currents.
             <br />
-            One day.
+            One horizon.
           </>
         }
       />

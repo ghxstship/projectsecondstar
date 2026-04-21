@@ -27,7 +27,7 @@ export default function GuestNav() {
         href="#"
         className="font-display text-[32px] leading-none text-ink no-underline"
       >
-        HVRBR<span className="text-cyan">.CLUB</span>
+        HVRBOR.CLUB<span className="text-cyan">.</span>
       </a>
 
       <div className="flex items-center gap-3 md:gap-8">
@@ -44,10 +44,10 @@ export default function GuestNav() {
           Experience
         </a>
         <a
-          href="#sailings"
+          href="#calendar"
           className="hidden md:inline font-mono text-[12px] uppercase tracking-[0.2em] text-ink hover:text-cyan-deep transition-colors"
         >
-          Sailings
+          Calendar
         </a>
         <a
           href="#faq"
@@ -56,7 +56,7 @@ export default function GuestNav() {
           FAQ
         </a>
         <span className="hidden lg:inline border-l border-line pl-4 font-mono text-[10px] uppercase tracking-[0.2em] text-muted">
-          Sailing / June 2026
+          Launch / June 2026
         </span>
         <a
           href={BOOKING_URL}

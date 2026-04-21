@@ -44,7 +44,7 @@ export default function Pillars() {
             </div>
             <div className="border-t border-line pt-5">
               <div className="mb-2.5 font-mono text-[10px] uppercase tracking-[0.25em] text-cyan">
-                HVRBR.CLUB Integration
+                HVRBOR.CLUB Integration
               </div>
               <div className="font-sub text-[18px] leading-snug tracking-wide text-paper">
                 {p.integration}

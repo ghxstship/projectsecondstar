@@ -10,12 +10,12 @@ export default function FAQ() {
   return (
     <section id="faq" className="bg-paper px-5 py-20 md:px-10 md:py-[120px]">
       <SectionHeader
-        num="05 / Questions"
+        num="05 / Before You Book"
         title={
           <>
-            Before
+            Fair
             <br />
-            you book.
+            questions.
           </>
         }
       />

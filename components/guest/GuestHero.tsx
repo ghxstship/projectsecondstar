@@ -1,16 +1,17 @@
 import { BOOKING_URL } from "@/lib/config";
 
 const meta = [
-  { label: "First Horizon", value: "June 2026" },
-  { label: "Home Port", value: "Miami Beach Marina" },
-  { label: "Cadence", value: "Saturdays / Sunrise to Sunset" },
-  { label: "Capacity", value: "12 Seats per Vessel" },
+  { label: "Casting", value: "SEAson 1" },
+  { label: "Premiere", value: "June 20, 2026" },
+  { label: "Port", value: "Miami Beach Marina" },
+  { label: "Episodes", value: "8 Biweekly Saturdays" },
+  { label: "Seats", value: "12 per Episode" },
 ];
 
 export default function GuestHero() {
   return (
     <section className="relative min-h-screen overflow-hidden px-5 pb-20 pt-[120px] md:px-10 md:pt-[140px] grid grid-cols-1 gap-10">
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-5 border-b border-line pb-5">
+      <div className="grid grid-cols-2 gap-5 border-b border-line pb-5 md:grid-cols-5">
         {meta.map((m) => (
           <div key={m.label} className="flex flex-col gap-1">
             <span className="font-mono text-[10px] uppercase tracking-[0.25em] text-muted">
@@ -22,28 +23,22 @@ export default function GuestHero() {
       </div>
 
       <h1 className="font-display uppercase text-[clamp(64px,12vw,200px)] leading-[0.85] tracking-[-0.02em] mt-5 relative">
-        Saturday just
+        Saturdays
         <br />
-        got a horizon<span className="text-cyan">.</span>
+        are for
+        <br />
+        the sea<span className="text-cyan">.</span>
       </h1>
 
-      <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-10 border-t-[3px] border-ink pt-10">
+      <div className="mt-10 grid grid-cols-1 md:grid-cols-[auto_1fr] gap-10 border-t-[3px] border-ink pt-10">
         <div>
-          <div className="font-sub text-[clamp(36px,5vw,72px)] leading-[0.95] tracking-wide">
-            Eight hours,
-            <br />
-            one horizon,
-            <br />
-            zero ordinary.
-          </div>
-        </div>
-        <div>
-          <p className="max-w-[500px] text-[17px] leading-relaxed">
-            A curated flotilla of design-forward vessels running one eight-hour
-            program across Biscayne Bay. Miami Beach Marina to Haulover Sandbar
-            to Stiltsville and back. Wellness in the morning. Music in the
-            afternoon. The right people the whole way through. Not a boat rental.
-            Not a party cruise. The day itself.
+          <p className="max-w-[560px] text-[17px] leading-relaxed">
+            A Flotilla of 12-seat vessels running one designed day across
+            Biscayne Bay. Miami Beach Marina out, Haulover Sandbar in the
+            middle, Stiltsville on the way back. Wellness in the morning.
+            Music in the afternoon. The right Crew the whole way through.
+            Not a charter. Not a cruise. A Saturday somebody actually thought
+            about — and one chapter of a story we're writing together.
           </p>
           <div className="mt-8 flex flex-wrap items-center gap-4">
             <a
@@ -61,6 +56,9 @@ export default function GuestHero() {
               See the Day
             </a>
           </div>
+          <p className="mt-4 font-mono text-[11px] uppercase tracking-[0.2em] text-muted">
+            12 seats per Episode. SEAson 1 premieres June 20.
+          </p>
         </div>
       </div>
 
@@ -69,7 +67,7 @@ export default function GuestHero() {
         style={{ writingMode: "vertical-rl" }}
       >
         <span className="h-10 w-px bg-muted animate-pulse-line" />
-        Scroll / Set Sail
+        Keep going.
       </div>
     </section>
   );

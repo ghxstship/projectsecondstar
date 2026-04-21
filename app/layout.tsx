@@ -31,23 +31,24 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "HVRBR.CLUB / Miami's Flotilla, One Day at a Time",
+  title: "HVRBOR.CLUB / SEAson 1 Premieres June 20, 2026",
   description:
-    "A curated Saturday flotilla across Biscayne Bay. Eight hours, one horizon, zero ordinary. Sailing from Miami Beach Marina, June 2026. A GHXSTSHIP brand.",
+    "A curated Miami Flotilla Episode. Eight Saturdays across Biscayne Bay, 12 seats per Episode, one SEAson at a time. Launching June 20, 2026. A GHXSTSHIP brand.",
   keywords: [
-    "hvrbr.club",
-    "hvrbr",
-    "miami yacht",
+    "hvrbor.club",
+    "hvrbor",
     "miami flotilla",
-    "day experience miami",
-    "ghxstship",
     "biscayne bay",
+    "miami beach marina",
+    "ghxstship",
+    "season 1",
+    "miami saturday",
   ],
   authors: [{ name: "GHXSTSHIP Industries" }],
   openGraph: {
-    title: "HVRBR.CLUB / Miami's Flotilla, One Day at a Time",
+    title: "HVRBOR.CLUB / SEAson 1 Premieres June 20, 2026",
     description:
-      "A curated Saturday flotilla across Biscayne Bay. Sailing June 2026.",
+      "A curated Miami Flotilla Episode. Eight Saturdays across Biscayne Bay, 12 seats per Episode. Launching June 20, 2026.",
     type: "website",
   },
 };

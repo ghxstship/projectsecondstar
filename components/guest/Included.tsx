@@ -8,7 +8,7 @@ export default function Included() {
       className="bg-paper px-5 py-20 text-ink md:px-10 md:py-[120px]"
     >
       <SectionHeader
-        num="03 / What's In The Seat"
+        num="03 / In The Seat"
         title={
           <>
             The full
@@ -17,6 +17,11 @@ export default function Included() {
           </>
         }
       />
+
+      <p className="mb-10 max-w-[640px] font-sub text-[24px] leading-tight tracking-wide md:text-[28px]">
+        Everything below is in the seat. No upcharges at the bar. No surprises
+        at the dock.
+      </p>
 
       <div className="border-hard">
         {guestIncluded.map((item) => (
