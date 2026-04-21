@@ -1,0 +1,39 @@
+{
+  "brand": "HVRBR.CLUB",
+  "description": "Design token palette — canonical hex values for press and partnership use.",
+  "updated": "2026-04-21",
+  "tokens": {
+    "ink": {
+      "hex": "#0A0A0A",
+      "role": "Primary dark / body text / dark backgrounds"
+    },
+    "paper": {
+      "hex": "#F5F2EC",
+      "role": "Primary light / paper background / light surfaces"
+    },
+    "cyan": {
+      "hex": "#00E5FF",
+      "role": "Brand accent / primary highlight / interactive states"
+    },
+    "cyan-deep": {
+      "hex": "#00BCD4",
+      "role": "Secondary cyan / hover states / on-paper accent"
+    },
+    "fog": {
+      "hex": "#1A1A1A",
+      "role": "Dark card / elevated surface on ink"
+    },
+    "dust": {
+      "hex": "#2A2A28",
+      "role": "Darker section background"
+    },
+    "line": {
+      "hex": "#333333",
+      "role": "Divider on dark surfaces"
+    },
+    "muted": {
+      "hex": "#8A8A86",
+      "role": "Muted text / secondary labels / monospace captions"
+    }
+  }
+}

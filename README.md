@@ -147,6 +147,33 @@ When you pick this up in Claude Code, the usual first-pass things to tackle:
 
 ---
 
+## Press & Partnerships
+
+**Contact**
+
+- Press: `press@hvrbr.club`
+- Partnerships: `partnerships@hvrbr.club`
+- Careers: `careers@hvrbr.club`
+
+### Boilerplate (copy-ready, 45 words)
+
+> HVRBR.CLUB is a curated Saturday flotilla across Biscayne Bay — eight hours of programming from sunrise to sunset, twelve seats per vessel, one soundtrack, one horizon. Anchored in wellness, music, community, and Miami's founder economy. Sailing from Miami Beach Marina, launching June 2026. A GHXSTSHIP brand.
+
+### Brand Assets
+
+Downloadable assets live in `/public/press/` and are served from the site root.
+
+| File | Purpose | Status |
+| --- | --- | --- |
+| `hvrbr-club-colors.json` | Canonical color palette (hex + semantic roles) | Locked |
+| `hvrbr-club-wordmark.svg` | Primary wordmark, SVG with font-as-paths | **Pending final export from design** |
+| `hvrbr-club-wordmark-mono.svg` | Single-color variant (no cyan accent) | Pending |
+| `hvrbr-club-lockup@2x.png` | Raster fallback, 2x density | Pending |
+
+When the design team exports the final wordmark, drop the SVG into `/public/press/` with the filename above. The table updates itself — no other code changes needed.
+
+---
+
 ## License
 
 Proprietary. HVRBR.CLUB LLC / A GHXSTSHIP Brand. All rights reserved.
