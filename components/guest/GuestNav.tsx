@@ -4,23 +4,23 @@ import { useEffect, useState } from "react";
 import { BOOKING_URL } from "@/lib/config";
 
 export default function GuestNav() {
-  const [hidden, setHidden] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
-    let lastScroll = 0;
     const onScroll = () => {
-      const cur = window.scrollY;
-      setHidden(cur > lastScroll && cur > 100);
-      lastScroll = cur;
+      setScrolled(window.scrollY > 80);
     };
     window.addEventListener("scroll", onScroll, { passive: true });
+    onScroll();
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 flex items-center justify-between border-b-[3px] border-ink bg-paper px-5 py-4 md:px-10 md:py-5 transition-transform duration-300 ${
-        hidden ? "-translate-y-full" : "translate-y-0"
+      className={`fixed top-0 left-0 right-0 z-50 flex items-center justify-between border-b-[3px] border-ink px-5 md:px-10 transition-all duration-300 ${
+        scrolled
+          ? "py-2 md:py-3 bg-paper/85 backdrop-blur-md"
+          : "py-4 md:py-5 bg-paper"
       }`}
     >
       <a
