@@ -1,29 +1,29 @@
-import Nav from "@/components/Nav";
-import Hero from "@/components/Hero";
+import GuestNav from "@/components/guest/GuestNav";
+import GuestHero from "@/components/guest/GuestHero";
 import Marquee from "@/components/Marquee";
-import Thesis from "@/components/Thesis";
-import Pillars from "@/components/Pillars";
+import Manifesto from "@/components/guest/Manifesto";
 import Timeline from "@/components/Timeline";
-import Scaling from "@/components/Scaling";
-import Economics from "@/components/Economics";
-import Audience from "@/components/Audience";
-import Contact from "@/components/Contact";
-import Footer from "@/components/Footer";
+import Experience from "@/components/guest/Experience";
+import Included from "@/components/guest/Included";
+import Sailings from "@/components/guest/Sailings";
+import FAQ from "@/components/guest/FAQ";
+import BookingCTA from "@/components/guest/BookingCTA";
+import GuestFooter from "@/components/guest/GuestFooter";
 
 export default function Home() {
   return (
     <main>
-      <Nav />
-      <Hero />
+      <GuestNav />
+      <GuestHero />
       <Marquee />
-      <Thesis />
-      <Pillars />
+      <Manifesto />
       <Timeline />
-      <Scaling />
-      <Economics />
-      <Audience />
-      <Contact />
-      <Footer />
+      <Experience />
+      <Included />
+      <Sailings />
+      <FAQ />
+      <BookingCTA />
+      <GuestFooter />
     </main>
   );
 }

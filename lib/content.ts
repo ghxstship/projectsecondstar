@@ -296,3 +296,176 @@ export const audiences: Audience[] = [
     ],
   },
 ];
+
+// ====================================================================
+// GUEST-FACING CONTENT
+// ====================================================================
+
+export type GuestPillar = {
+  num: string;
+  title: string;
+  body: string;
+};
+
+export type IncludedItem = {
+  num: string;
+  name: string;
+  detail: string;
+};
+
+export type SailingStatus = "open" | "waitlist";
+
+export type Sailing = {
+  date: string;
+  theme: string;
+  seatsLabel: string;
+  status: SailingStatus;
+};
+
+export type GuestFaq = {
+  question: string;
+  answer: string;
+};
+
+export const guestPillars: GuestPillar[] = [
+  {
+    num: "/ 01",
+    title: "Start Clean.",
+    body: "Mornings on HVRBOR don't start at the bar. They start with breathwork on the foredeck, hydration from a functional adaptogen bar, and a founder's dose of silence on the water before Miami wakes up. Arrive tired. Leave reset.",
+  },
+  {
+    num: "/ 02",
+    title: "Move With The Room.",
+    body: "Our DJs understand daylight. No one is screaming over a 2 AM bassline. Just the right tempo at the right hour, engineered for eight-hour stamina. Soft-club energy, Biscayne Bay edition.",
+  },
+  {
+    num: "/ 03",
+    title: "Meet The Crew.",
+    body: "The people on your boat are not an accident. Every sailing is curated — founders, operators, creatives, and the occasional person you've been trying to meet for six months. The most valuable conversation of your year might happen at the sandbar.",
+  },
+  {
+    num: "/ 04",
+    title: "End Full.",
+    body: "Sunset return along the skyline, final set from your DJ, a content package delivered to your inbox within 72 hours, and an optional after-hours extension at a partnered Ocean Drive room. You'll still be talking about it Wednesday.",
+  },
+];
+
+export const guestIncluded: IncludedItem[] = [
+  {
+    num: "01",
+    name: "Captained Vessel",
+    detail: "8 hours / 12-seat maximum",
+  },
+  {
+    num: "02",
+    name: "Full-Day Food & Beverage",
+    detail: "Functional NA menu + premium bar",
+  },
+  {
+    num: "03",
+    name: "Curated DJ",
+    detail: "Daytime residency program, live on deck",
+  },
+  {
+    num: "04",
+    name: "Professional Photography",
+    detail: "Delivered to inbox in 72 hours",
+  },
+  {
+    num: "05",
+    name: "Hosted Programming",
+    detail: "Embarkation to disembarkation",
+  },
+  {
+    num: "06",
+    name: "Recovery Kit",
+    detail: "Sun, hydration, small rituals",
+  },
+  {
+    num: "07",
+    name: "Optional After-Hours",
+    detail: "Partnered Ocean Drive extension",
+  },
+];
+
+export const guestSailings: Sailing[] = [
+  {
+    date: "June 6, 2026",
+    theme: "Launch Flotilla",
+    seatsLabel: "4 seats left",
+    status: "open",
+  },
+  {
+    date: "June 13, 2026",
+    theme: "Founders Edition",
+    seatsLabel: "Waitlist",
+    status: "waitlist",
+  },
+  {
+    date: "June 20, 2026",
+    theme: "Recovery Flotilla",
+    seatsLabel: "8 seats left",
+    status: "open",
+  },
+  {
+    date: "June 27, 2026",
+    theme: "Pride Edition",
+    seatsLabel: "2 seats left",
+    status: "open",
+  },
+  {
+    date: "July 4, 2026",
+    theme: "Independence Sundowner",
+    seatsLabel: "Waitlist",
+    status: "waitlist",
+  },
+  {
+    date: "July 11, 2026",
+    theme: "Open Flotilla",
+    seatsLabel: "11 seats left",
+    status: "open",
+  },
+];
+
+export const guestFaqs: GuestFaq[] = [
+  {
+    question: "Do I need to know anyone to book?",
+    answer:
+      "No. HVRBOR is designed for solo seat buyers just as much as groups. Every sailing is curated to balance energy, so you'll walk off knowing names worth knowing.",
+  },
+  {
+    question: "Is this a party boat?",
+    answer:
+      "No. HVRBOR is a designed day experience. Music is part of it. So is breathwork, food, conversation, and content. Guests who show up looking for a bottle-service cruise are typically disappointed.",
+  },
+  {
+    question: "What if I don't drink?",
+    answer:
+      "You'll be well taken care of. HVRBOR runs a fully-stocked functional NA bar with adaptogens, tonics, and craft non-alcoholic cocktails alongside the spirits list. Sober-curious guests are a core part of every sailing.",
+  },
+  {
+    question: "What should I wear?",
+    answer:
+      "Swim under, something you'd wear to a Miami rooftop over. A light layer for the return leg. We send a prep note with specifics 48 hours before your sailing.",
+  },
+  {
+    question: "What if the weather turns?",
+    answer:
+      "Miami afternoons can surprise anyone. The day is structured to complete the peak experience before typical storm windows, and every sailing has an abort-to-marina plan built into the route. If a sailing is fully cancelled, you get a credit that rolls into any future HVRBOR date.",
+  },
+  {
+    question: "Can I book the whole boat?",
+    answer:
+      "Yes. Private charters are available for 6\u201312 guests at a flat rate. Bachelorettes, birthdays, corporate off-sites, wedding weekends. The \u201cBook\u201d flow handles private inquiries too \u2014 select the private option at checkout.",
+  },
+  {
+    question: "Where does it depart?",
+    answer:
+      "Miami Beach Marina. Exact slip and check-in details are sent 48 hours before your sailing.",
+  },
+  {
+    question: "Do you sail year-round?",
+    answer:
+      "Our primary public sailing season is May through October. November through April runs on a private-charter and themed-sailing calendar. Sign up for the list to be notified when winter dates open.",
+  },
+];

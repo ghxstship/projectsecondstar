@@ -33,7 +33,7 @@ const dmSans = DM_Sans({
 export const metadata: Metadata = {
   title: "HVRBOR / Miami's Flotilla, One Day at a Time",
   description:
-    "A new kind of day experience on the water. Curated flotillas of design-forward vessels running a single sunrise-to-sunset program across Biscayne Bay. A GHXSTSHIP brand. Launching June 2026.",
+    "A curated Saturday flotilla across Biscayne Bay. Eight hours, one horizon, zero ordinary. Sailing from Miami Beach Marina, June 2026. A GHXSTSHIP brand.",
   keywords: [
     "hvrbor",
     "miami yacht",
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "HVRBOR / Miami's Flotilla, One Day at a Time",
     description:
-      "A new kind of day experience on the water. Launching June 2026.",
+      "A curated Saturday flotilla across Biscayne Bay. Sailing June 2026.",
     type: "website",
   },
 };
