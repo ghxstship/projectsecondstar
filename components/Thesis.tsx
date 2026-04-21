@@ -30,7 +30,7 @@ export default function Thesis() {
             them run as a curated product.
           </p>
           <p>
-            HVRBOR operates the other way. We don't rent boats. We program
+            HVRBR.CLUB operates the other way. We don't rent boats. We program
             days. Each sailing is choreographed from embarkation to
             disembark — route, soundtrack, hosts, food, content, and community.
             Our vessels sail together, anchor together, and return together.

@@ -1,4 +1,4 @@
-# HVRBOR
+# HVRBR.CLUB
 
 **Miami's flotilla, one day at a time.** A GHXSTSHIP brand launching June 2026.
 
@@ -149,4 +149,4 @@ When you pick this up in Claude Code, the usual first-pass things to tackle:
 
 ## License
 
-Proprietary. HVRBOR LLC / A GHXSTSHIP Brand. All rights reserved.
+Proprietary. HVRBR.CLUB LLC / A GHXSTSHIP Brand. All rights reserved.

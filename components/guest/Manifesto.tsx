@@ -22,7 +22,7 @@ export default function Manifesto() {
             not an experience. It's an afternoon you regret by Monday.
           </p>
           <p className="text-[18px] leading-relaxed">
-            HVRBOR operates differently. Every sailing is choreographed from
+            HVRBR.CLUB operates differently. Every sailing is choreographed from
             dock to dock. The route is set. The soundtrack is curated. The food
             is intentional. The people on your boat are there for the same
             reason you are.

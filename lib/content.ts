@@ -1,5 +1,5 @@
 // ====================================================================
-// HVRBOR CONTENT DATA
+// HVRBR.CLUB CONTENT DATA
 // ====================================================================
 // Central source of truth for pillar copy, timeline acts, fleet
 // scaling phases, and audience positioning. Edit here instead of
@@ -165,7 +165,7 @@ export const phases: Phase[] = [
     period: "September 2026 — May 2027",
     title: "The Flotilla Begins",
     obj: "Three vessels sailing together. The raft-up starts here.",
-    desc: "Three is the minimum viable flotilla. This is the moment HVRBOR stops being a better charter and starts being the Yacht Week equivalent. We expand to Saturday and Sunday public sailings, introduce themed monthly programs, launch price laddering, and hire our first full-time ops team. Winter operates on a curated corporate and private charter mix — demand stays steady year-round.",
+    desc: "Three is the minimum viable flotilla. This is the moment HVRBR.CLUB stops being a better charter and starts being the Yacht Week equivalent. We expand to Saturday and Sunday public sailings, introduce themed monthly programs, launch price laddering, and hire our first full-time ops team. Winter operates on a curated corporate and private charter mix — demand stays steady year-round.",
     vessels: "03",
     capacity: "36",
     capacityUnit: "/ Day",
@@ -199,7 +199,7 @@ export const phases: Phase[] = [
     period: "2028 onward",
     title: "Beyond Miami",
     obj: "Fleet-as-a-service. Format licensing. Multi-city.",
-    desc: "HVRBOR productizes into a deployable format for other markets. Tampa Bay, Austin and Lake Travis, Lake of the Ozarks, San Diego, Long Beach, Lake Lanier, plus seasonal overlays in BVI and Ibiza. Three expansion vectors run in parallel: owned geographic replication, format licensing to local charter operators, and event overlay service into festivals and conferences. The platform is the business.",
+    desc: "HVRBR.CLUB productizes into a deployable format for other markets. Tampa Bay, Austin and Lake Travis, Lake of the Ozarks, San Diego, Long Beach, Lake Lanier, plus seasonal overlays in BVI and Ibiza. Three expansion vectors run in parallel: owned geographic replication, format licensing to local charter operators, and event overlay service into festivals and conferences. The platform is the business.",
     vessels: "Multi-city",
     capacity: "500+",
     capacityUnit: "/ Day",
@@ -233,7 +233,7 @@ export const audiences: Audience[] = [
     pitchHighlight: "proven platform",
     pitchPost:
       " — launching into Miami's deepest year-round demand window.",
-    body: "HVRBOR is a new entity nested under GHXSTSHIP Industries, a production and technology company with 13+ years of operations across 52 countries and live event credentials spanning Formula 1, EDC, Ultra, PATRÓN, Red Bull, and Heineken. HVRBOR is capital-light by design — vessels are chartered, not owned, in the pilot and scaling phases. We're raising against a proven operating team, not a thesis.",
+    body: "HVRBR.CLUB is a new entity nested under GHXSTSHIP Industries, a production and technology company with 13+ years of operations across 52 countries and live event credentials spanning Formula 1, EDC, Ultra, PATRÓN, Red Bull, and Heineken. HVRBR.CLUB is capital-light by design — vessels are chartered, not owned, in the pilot and scaling phases. We're raising against a proven operating team, not a thesis.",
     boxLabel: "Current Round",
     boxTitle: "$300K Pre-Seed",
     boxDesc:
@@ -256,7 +256,7 @@ export const audiences: Audience[] = [
     pitchPre: "We don't compete with Miami's best rooms. We ",
     pitchHighlight: "extend them onto the water.",
     pitchPost: "",
-    body: "HVRBOR is a complementary layer to the Miami hospitality, wellness, and members-club ecosystem. Partner venues get a curated on-water channel for their members, a seasonal content destination, and a new category of programming that doesn't exist in their four walls. The flotilla becomes a satellite of your brand for a day.",
+    body: "HVRBR.CLUB is a complementary layer to the Miami hospitality, wellness, and members-club ecosystem. Partner venues get a curated on-water channel for their members, a seasonal content destination, and a new category of programming that doesn't exist in their four walls. The flotilla becomes a satellite of your brand for a day.",
     boxLabel: "Partner Categories",
     boxTitle: "Co-Branded Day Programs",
     boxDesc:
@@ -279,7 +279,7 @@ export const audiences: Audience[] = [
     pitchPre: "Brand activation on water hits different — because ",
     pitchHighlight: "nobody scrolls on a boat.",
     pitchPost: "",
-    body: "HVRBOR's audience is captive for eight hours in a designed, content-rich environment. The ROI math is simple: every guest produces multiples of their ticket value in organic content, and every sponsor integration lives inside that content in a way paid social can't replicate. We build tiered activation structures against the season, individual sailings, and single-activation moments.",
+    body: "HVRBR.CLUB's audience is captive for eight hours in a designed, content-rich environment. The ROI math is simple: every guest produces multiples of their ticket value in organic content, and every sponsor integration lives inside that content in a way paid social can't replicate. We build tiered activation structures against the season, individual sailings, and single-activation moments.",
     boxLabel: "Activation Tiers",
     boxTitle: "Season / Sailing / Moment",
     boxDesc:
@@ -331,7 +331,7 @@ export const guestPillars: GuestPillar[] = [
   {
     num: "/ 01",
     title: "Start Clean.",
-    body: "Mornings on HVRBOR don't start at the bar. They start with breathwork on the foredeck, hydration from a functional adaptogen bar, and a founder's dose of silence on the water before Miami wakes up. Arrive tired. Leave reset.",
+    body: "Mornings on HVRBR.CLUB don't start at the bar. They start with breathwork on the foredeck, hydration from a functional adaptogen bar, and a founder's dose of silence on the water before Miami wakes up. Arrive tired. Leave reset.",
   },
   {
     num: "/ 02",
@@ -431,17 +431,17 @@ export const guestFaqs: GuestFaq[] = [
   {
     question: "Do I need to know anyone to book?",
     answer:
-      "No. HVRBOR is designed for solo seat buyers just as much as groups. Every sailing is curated to balance energy, so you'll walk off knowing names worth knowing.",
+      "No. HVRBR.CLUB is designed for solo seat buyers just as much as groups. Every sailing is curated to balance energy, so you'll walk off knowing names worth knowing.",
   },
   {
     question: "Is this a party boat?",
     answer:
-      "No. HVRBOR is a designed day experience. Music is part of it. So is breathwork, food, conversation, and content. Guests who show up looking for a bottle-service cruise are typically disappointed.",
+      "No. HVRBR.CLUB is a designed day experience. Music is part of it. So is breathwork, food, conversation, and content. Guests who show up looking for a bottle-service cruise are typically disappointed.",
   },
   {
     question: "What if I don't drink?",
     answer:
-      "You'll be well taken care of. HVRBOR runs a fully-stocked functional NA bar with adaptogens, tonics, and craft non-alcoholic cocktails alongside the spirits list. Sober-curious guests are a core part of every sailing.",
+      "You'll be well taken care of. HVRBR.CLUB runs a fully-stocked functional NA bar with adaptogens, tonics, and craft non-alcoholic cocktails alongside the spirits list. Sober-curious guests are a core part of every sailing.",
   },
   {
     question: "What should I wear?",
@@ -451,7 +451,7 @@ export const guestFaqs: GuestFaq[] = [
   {
     question: "What if the weather turns?",
     answer:
-      "Miami afternoons can surprise anyone. The day is structured to complete the peak experience before typical storm windows, and every sailing has an abort-to-marina plan built into the route. If a sailing is fully cancelled, you get a credit that rolls into any future HVRBOR date.",
+      "Miami afternoons can surprise anyone. The day is structured to complete the peak experience before typical storm windows, and every sailing has an abort-to-marina plan built into the route. If a sailing is fully cancelled, you get a credit that rolls into any future HVRBR.CLUB date.",
   },
   {
     question: "Can I book the whole boat?",

@@ -5,8 +5,8 @@ export default function GuestFooter() {
     <footer className="bg-ink px-5 pb-10 pt-20 text-paper md:px-10">
       <div className="mb-[60px] grid grid-cols-1 gap-[60px] border-b border-line pb-10 md:grid-cols-[2fr_1fr_1fr]">
         <div>
-          <div className="relative font-display text-[clamp(100px,18vw,280px)] uppercase leading-[0.85] tracking-[-0.02em]">
-            HVRBOR<span className="text-cyan">.</span>
+          <div className="relative font-display text-[clamp(64px,14vw,220px)] uppercase leading-[0.85] tracking-[-0.02em]">
+            HVRBR<span className="text-cyan">.CLUB</span>
           </div>
         </div>
 
@@ -18,24 +18,24 @@ export default function GuestFooter() {
         </FooterCol>
 
         <FooterCol title="Connect">
-          <FooterLink href="https://instagram.com/hvrbor.club" external>
+          <FooterLink href="https://instagram.com/hvrbr.club" external>
             Instagram
           </FooterLink>
-          <FooterLink href="https://tiktok.com/@hvrbor.club" external>
+          <FooterLink href="https://tiktok.com/@hvrbr.club" external>
             TikTok
           </FooterLink>
-          <FooterLink href="mailto:press@hvrbor.club">Press</FooterLink>
-          <FooterLink href="mailto:partnerships@hvrbor.club">
+          <FooterLink href="mailto:press@hvrbr.club">Press</FooterLink>
+          <FooterLink href="mailto:partnerships@hvrbr.club">
             Partnerships
           </FooterLink>
-          <FooterLink href="mailto:careers@hvrbor.club">Careers</FooterLink>
-          <FooterLink href="mailto:hello@hvrbor.club">Crew</FooterLink>
+          <FooterLink href="mailto:careers@hvrbr.club">Careers</FooterLink>
+          <FooterLink href="mailto:hello@hvrbr.club">Crew</FooterLink>
         </FooterCol>
       </div>
 
       <div className="flex flex-col items-start justify-between gap-3 font-mono text-[10px] uppercase tracking-[0.25em] text-muted md:flex-row md:items-center">
         <div>
-          HVRBOR LLC / A <span className="text-paper">GHXSTSHIP</span> Brand
+          HVRBR.CLUB LLC / A <span className="text-paper">GHXSTSHIP</span> Brand
         </div>
         <div>Miami / Launch June 2026</div>
         <a
