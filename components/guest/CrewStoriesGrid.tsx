@@ -5,8 +5,6 @@ import { logArticles } from "@/lib/log";
 export default function CrewStoriesGrid() {
   const stories = logArticles.filter((a) => a.category === "Crew Story");
 
-  if (stories.length === 0) return null;
-
   return (
     <section
       id="crew-stories"
@@ -27,8 +25,27 @@ export default function CrewStoriesGrid() {
         Profiles ship opt-in. The Crew Directory lives in The Harbor.
       </p>
 
-      <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-        {stories.map((s) => (
+      {stories.length === 0 ? (
+        <div className="border-hard p-10 md:p-16">
+          <div className="mb-6 font-mono text-[11px] uppercase tracking-[0.3em] text-cyan-deep">
+            Coming after Episode 01
+          </div>
+          <h3 className="font-display text-[clamp(32px,5vw,72px)] uppercase leading-[0.95] tracking-[-0.01em]">
+            The first stories
+            <br />
+            ship with the first
+            <br />
+            Saturday<span className="text-cyan">.</span>
+          </h3>
+          <p className="mt-6 max-w-[640px] text-[16px] leading-relaxed">
+            Crew Stories are opt-in profiles of named members — what they
+            build, what they brought to the room, what they took home. The
+            first batch publishes after The Origin sails June 20, 2026.
+          </p>
+        </div>
+      ) : (
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+          {stories.map((s) => (
           <Link
             key={s.slug}
             href={`/log/${s.slug}`}
@@ -50,8 +67,9 @@ export default function CrewStoriesGrid() {
               Read entry <span aria-hidden>→</span>
             </span>
           </Link>
-        ))}
-      </div>
+          ))}
+        </div>
+      )}
     </section>
   );
 }

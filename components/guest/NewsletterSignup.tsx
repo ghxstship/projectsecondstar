@@ -11,12 +11,22 @@ export default function NewsletterSignup() {
   const onSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setStatus("sending");
-    await new Promise((r) => setTimeout(r, 600));
-    setStatus("sent");
-    setTimeout(() => {
-      setEmail("");
+    try {
+      const r = await fetch("/api/newsletter", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email }),
+      });
+      if (!r.ok) throw new Error(await r.text());
+      setStatus("sent");
+      setTimeout(() => {
+        setEmail("");
+        setStatus("idle");
+      }, 4000);
+    } catch (err) {
+      console.error("[newsletter] submission failed", err);
       setStatus("idle");
-    }, 4000);
+    }
   };
 
   return (

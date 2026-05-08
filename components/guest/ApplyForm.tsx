@@ -45,8 +45,18 @@ export default function ApplyForm() {
   const onSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setStatus("sending");
-    await new Promise((r) => setTimeout(r, 800));
-    setStatus("sent");
+    try {
+      const r = await fetch("/api/apply", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(form),
+      });
+      if (!r.ok) throw new Error(await r.text());
+      setStatus("sent");
+    } catch (err) {
+      console.error("[apply] submission failed", err);
+      setStatus("idle");
+    }
   };
 
   if (status === "sent") {

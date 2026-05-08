@@ -60,6 +60,19 @@ export default function GuestFooter() {
         </Link>
       </div>
 
+      <div className="mb-6 flex flex-wrap items-center gap-x-6 gap-y-2 font-mono text-[10px] uppercase tracking-[0.2em] text-muted">
+        <Link href="/privacy" className="hover:text-cyan no-underline">
+          Privacy
+        </Link>
+        <Link href="/terms" className="hover:text-cyan no-underline">
+          Terms
+        </Link>
+        <Link href="/harbor" className="hover:text-cyan no-underline">
+          The Harbor
+        </Link>
+        <span className="text-muted/50">© HVRBOR LLC 2026</span>
+      </div>
+
       <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-muted/70">
         No yachts were harmed in the making of this website.
         <br />A few Saturdays were improved considerably.

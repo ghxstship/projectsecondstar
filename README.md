@@ -117,6 +117,30 @@ All copy + data lives in `lib/`. Edit there instead of digging into components.
 
 Every export is typed — TypeScript flags missing fields when you add new items.
 
+## Forms + API Routes
+
+Three forms post to JSON API routes:
+
+- `/api/apply` — Captain casting standby (`ApplyForm`)
+- `/api/newsletter` — The List newsletter signup (`NewsletterSignup`)
+- `/api/bottle-episode` — Private full-boat charter inquiry (`BottleEpisodes`)
+
+All three call `lib/notify.ts`, which always logs the submission to the server console and additionally calls Resend if `RESEND_API_KEY` is set. The user-facing flow returns success either way — the form never breaks because of a missing key.
+
+## Environment Variables
+
+Copy `.env.local.example` to `.env.local` to configure email delivery.
+
+| Variable | Purpose | Default |
+| --- | --- | --- |
+| `RESEND_API_KEY` | Enables outbound email via Resend | unset (logs only) |
+| `RESEND_FROM` | From address on outbound mail | `notifications@hvrbor.club` |
+| `APPLY_INBOX` | Captain apply destination | `hello@hvrbor.club` |
+| `BOTTLE_INBOX` | Bottle Episode destination | `hello@hvrbor.club` |
+| `NEWSLETTER_INBOX` | Newsletter destination | `hello@hvrbor.club` |
+
+Without `RESEND_API_KEY` the site is fully functional — submissions log to the Vercel function logs (or local console in dev) and return success to the user. Set the key when you're ready to receive real mail.
+
 ---
 
 ## Design System

@@ -139,7 +139,45 @@ export default function PressPage() {
         <div className="grid grid-cols-1 items-start gap-10 md:grid-cols-[1fr_1.4fr] md:gap-20">
           <div>
             <div className="mb-4 font-mono text-[11px] uppercase tracking-[0.3em] text-cyan-deep">
-              03 / Contact
+              03 / Founders + Bios
+            </div>
+            <h2 className="font-display text-[clamp(40px,6vw,88px)] uppercase leading-[0.9] tracking-[-0.02em]">
+              Bios.
+              <br />
+              Coverage.
+            </h2>
+          </div>
+          <div className="flex flex-col gap-6">
+            <div className="border-hard p-8">
+              <div className="mb-3 font-mono text-[11px] uppercase tracking-[0.3em] text-cyan-deep">
+                On standby
+              </div>
+              <p className="font-sub text-[24px] leading-snug tracking-wide">
+                Founder bios, on-water photography, and Episode imagery ship
+                with the SEAson 1 press kit in May 2026.
+              </p>
+              <p className="mt-4 text-[14px] leading-relaxed">
+                Filing earlier? Email below with deadline and outlet — we
+                send advance copy on request.
+              </p>
+            </div>
+            <div className="border-hard p-8">
+              <div className="mb-3 font-mono text-[11px] uppercase tracking-[0.3em] text-cyan-deep">
+                Recent coverage
+              </div>
+              <p className="font-sub text-[24px] leading-snug tracking-wide text-muted">
+                The first round publishes alongside SEAson 1 launch.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-paper px-5 py-20 text-ink md:px-10 md:py-[120px]">
+        <div className="grid grid-cols-1 items-start gap-10 md:grid-cols-[1fr_1.4fr] md:gap-20">
+          <div>
+            <div className="mb-4 font-mono text-[11px] uppercase tracking-[0.3em] text-cyan-deep">
+              04 / Contact
             </div>
             <h2 className="font-display text-[clamp(40px,6vw,88px)] uppercase leading-[0.9] tracking-[-0.02em]">
               Press inquiries.

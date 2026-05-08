@@ -141,11 +141,46 @@ export default function AboutPage() {
         </div>
       </section>
 
+      <section className="bg-ink px-5 py-20 text-paper md:px-10 md:py-[120px]">
+        <div className="mb-10">
+          <div className="mb-2 font-mono text-[11px] uppercase tracking-[0.3em] text-cyan">
+            04 / Behind the Harbor
+          </div>
+          <h2 className="font-display text-[clamp(40px,5vw,72px)] uppercase leading-[0.95] tracking-[-0.01em]">
+            The team.
+          </h2>
+        </div>
+
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
+          {["Founder", "Director of Production", "Director of Network"].map(
+            (role) => (
+              <div
+                key={role}
+                className="flex min-h-[280px] flex-col justify-between gap-4 border-[3px] border-paper p-8"
+              >
+                <div>
+                  <div className="mb-3 font-mono text-[10px] uppercase tracking-[0.25em] text-cyan">
+                    {role}
+                  </div>
+                  <h3 className="font-display text-[28px] uppercase leading-[0.95] tracking-[-0.01em]">
+                    Bio TBD<span className="text-cyan">.</span>
+                  </h3>
+                </div>
+                <p className="text-[14px] leading-relaxed text-[#C5C5C0]">
+                  Named bios ship with the SEAson 1 press kit in May 2026.
+                  Press inquiries can request advance copy now.
+                </p>
+              </div>
+            ),
+          )}
+        </div>
+      </section>
+
       <section className="bg-paper px-5 py-20 text-ink md:px-10 md:py-[120px]">
         <div className="grid grid-cols-1 items-start gap-10 md:grid-cols-[1.1fr_1fr] md:gap-20">
           <div>
             <div className="mb-4 font-mono text-[11px] uppercase tracking-[0.3em] text-cyan-deep">
-              04 / Method
+              05 / Method
             </div>
             <h2 className="font-display text-[clamp(40px,6vw,88px)] uppercase leading-[0.9] tracking-[-0.02em]">
               Designed,

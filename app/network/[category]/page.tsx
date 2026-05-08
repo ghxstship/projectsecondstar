@@ -114,14 +114,14 @@ export default async function NetworkCategoryPage({
           ))}
         </div>
 
-        {vertical.pipeline.length > 0 && (
-          <div className="mt-12">
-            <div className="mb-3 font-mono text-[11px] uppercase tracking-[0.3em] text-cyan-deep">
-              02 / Pipeline
-            </div>
-            <p className="mb-6 font-sub text-[clamp(20px,2.5vw,32px)] leading-tight tracking-wide">
-              In conversation. Anchor targets. Pending confirmation.
-            </p>
+        <div className="mt-12">
+          <div className="mb-3 font-mono text-[11px] uppercase tracking-[0.3em] text-cyan-deep">
+            02 / Pipeline
+          </div>
+          <p className="mb-6 font-sub text-[clamp(20px,2.5vw,32px)] leading-tight tracking-wide">
+            In conversation. Anchor targets. Pending confirmation.
+          </p>
+          {vertical.pipeline.length > 0 ? (
             <ul className="grid grid-cols-1 gap-2 md:grid-cols-2">
               {vertical.pipeline.map((p) => (
                 <li
@@ -132,20 +132,25 @@ export default async function NetworkCategoryPage({
                 </li>
               ))}
             </ul>
-          </div>
-        )}
+          ) : (
+            <div className="border-l-2 border-muted py-2 pl-4 font-sub text-[18px] tracking-wide text-muted">
+              The pipeline opens with the SEAson. The first targets land at
+              Basel '26.
+            </div>
+          )}
+        </div>
       </section>
 
-      {verticalMoments.length > 0 && (
-        <section className="bg-ink px-5 py-20 text-paper md:px-10 md:py-[120px]">
-          <div className="mb-10">
-            <div className="mb-2 font-mono text-[11px] uppercase tracking-[0.3em] text-cyan">
-              03 / Moments In {vertical.label}
-            </div>
-            <h2 className="font-display text-[clamp(40px,5vw,72px)] uppercase leading-[0.95] tracking-[-0.01em]">
-              On the calendar.
-            </h2>
+      <section className="bg-ink px-5 py-20 text-paper md:px-10 md:py-[120px]">
+        <div className="mb-10">
+          <div className="mb-2 font-mono text-[11px] uppercase tracking-[0.3em] text-cyan">
+            03 / Moments In {vertical.label}
           </div>
+          <h2 className="font-display text-[clamp(40px,5vw,72px)] uppercase leading-[0.95] tracking-[-0.01em]">
+            On the calendar.
+          </h2>
+        </div>
+        {verticalMoments.length > 0 ? (
           <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
             {verticalMoments.map((m) => (
               <article
@@ -169,8 +174,18 @@ export default async function NetworkCategoryPage({
               </article>
             ))}
           </div>
-        </section>
-      )}
+        ) : (
+          <div className="border-[3px] border-paper p-10 md:p-14">
+            <div className="mb-4 font-mono text-[11px] uppercase tracking-[0.3em] text-cyan">
+              No Moments yet
+            </div>
+            <p className="font-sub text-[clamp(20px,2.5vw,32px)] leading-tight tracking-wide text-paper">
+              {vertical.label} Moments arrive on the calendar as the SEAson
+              progresses. The Harbor announces them first.
+            </p>
+          </div>
+        )}
+      </section>
 
       <HarborTeaser />
       <GuestFooter />
