@@ -1,8 +1,8 @@
 # HVRBOR.CLUB
 
-**Saturdays are for the sea.** A GHXSTSHIP brand launching June 2026.
+**Saturdays are for the sea.** A GHXSTSHIP brand. SEAson 1 premieres June 20, 2026.
 
-Investor / partner / sponsor launch page built in Next.js 15 with the App Router, TypeScript, and Tailwind CSS. Follows the GHXSTSHIP Contemporary Minimal Pop Art design system: monochromatic base with cyan accent, Anton / Bebas Neue / Share Tech Mono typography, zero emojis, three-pixel borders, hard geometric shadows.
+A year-round Miami membership built on a flotilla. Three pillars: **Experience** (the Saturdays), **Product** (the Archive), **Community** (the Crew). Built in Next.js 15 / App Router / TypeScript / Tailwind. Design system: monochromatic ink + paper with a cyan accent, Anton / Bebas Neue / Share Tech Mono / DM Sans, hard 3px borders, no emojis.
 
 ---
 
@@ -25,62 +25,97 @@ npm run lint       # Next.js lint
 
 ---
 
+## Routes
+
+```
+/                       Membership home — three-pillar frame, Network Moments, Episode + Log + Archive + Crew teasers
+/episodes               SEAson 1 calendar — Timeline, Itineraries A/B, Calendar, Bottle Episodes, FAQ
+/membership             Tier comparison, Network access matrix, The Mark, Membership FAQ
+/network                Seven verticals + Network Moments + Harbor teaser
+/network/[category]     Seven dynamic vertical pages — entertainment, sports, wellness, hospitality, travel, retail, nightlife
+/archive                Product surface — three rings (HVRBOR-direct, co-branded capsules, partner products)
+/crew                   Community surface — composition snapshot, Bring-a-Crew, Founding Crew, Crew Stories
+/log                    Publication index — featured article + grid + newsletter
+/log/[slug]             Article view with related entries
+/apply                  Captain casting standby form
+/about                  Origin, GHXSTSHIP parentage, Crew archetype, Method
+/press                  Boilerplate, brand assets, press contact
+/deck                   Investor / partner / sponsor pitch (preserved unchanged from v1)
+```
+
 ## Project Structure
 
 ```
 hvrbor/
 ├── app/
-│   ├── layout.tsx          # Root layout, font loading, metadata
-│   ├── page.tsx            # Root page, composes every section
-│   └── globals.css         # Tailwind directives + brand utilities
+│   ├── layout.tsx                  # Root layout, font loading, metadata
+│   ├── page.tsx                    # Membership home
+│   ├── episodes/page.tsx
+│   ├── membership/page.tsx
+│   ├── network/page.tsx + [category]/page.tsx
+│   ├── archive/page.tsx
+│   ├── crew/page.tsx
+│   ├── log/page.tsx + [slug]/page.tsx
+│   ├── apply/page.tsx
+│   ├── about/page.tsx
+│   ├── press/page.tsx
+│   ├── deck/page.tsx               # Original v1 investor page
+│   ├── error.tsx + not-found.tsx
+│   ├── sitemap.ts + robots.ts      # SEO
+│   └── globals.css
 ├── components/
-│   ├── Nav.tsx             # Fixed nav with scroll hide/show
-│   ├── Hero.tsx            # Hero with meta row and CTAs
-│   ├── Marquee.tsx         # Full-width scrolling band
-│   ├── SectionHeader.tsx   # Reusable section head
-│   ├── Thesis.tsx          # The gap / thesis statement
-│   ├── Pillars.tsx         # Four Miami cultural currents
-│   ├── Timeline.tsx        # Five-act day, click to expand
-│   ├── Scaling.tsx         # Phase tabs + fleet visualizer
-│   ├── Economics.tsx       # Unit economics cards + revenue stack
-│   ├── Audience.tsx        # Investors / Partners / Sponsors toggle
-│   ├── Contact.tsx         # Contact form
-│   └── Footer.tsx          # Oversized brand lockup + links
+│   ├── guest/                      # Membership-site components
+│   │   ├── GuestNav, GuestFooter, GuestHero, MembershipHero, EpisodesHero
+│   │   ├── Manifesto, Pillars3, Marquee tokens
+│   │   ├── EpisodeTeaserGrid, Calendar, Itineraries, BottleEpisodes
+│   │   ├── ArchiveRingGrid, ArchiveTeaserGrid
+│   │   ├── CrewComposition, CrewCompositionPreview, BringACrew, FoundingCrewBlock, CrewStoriesGrid
+│   │   ├── NetworkMomentsGrid, VerticalCategoryGrid, HarborTeaser
+│   │   ├── TierComparison, NetworkAccessByTier, TheMarkBlock, MembershipFAQ, MembershipCTA
+│   │   ├── LogPreviewGrid, NewsletterSignup, ApplyForm
+│   │   ├── Experience, Included, FAQ, BookingCTA  # Episode-page components
+│   ├── Nav, Hero, Footer, Pillars, Thesis, Timeline, Scaling, Economics, Audience, Contact, SectionHeader, Marquee
+│   └── (legacy /deck components preserved unchanged)
 ├── lib/
-│   └── content.ts          # All editable copy + phase data
-├── tailwind.config.ts      # Brand tokens: colors, fonts, shadows, keyframes
-├── next.config.mjs
-├── tsconfig.json
+│   ├── config.ts                   # BOOKING_URL, BRAND_LINE, emails, brand constants
+│   ├── content.ts                  # SEAson 1 Episodes, Itineraries, guestPillars, guestIncluded, guestFaqs
+│   ├── membership.ts               # Tiers + benefits (E×P×C) + Membership FAQ
+│   ├── network.ts                  # Seven verticals + anchor partners + pipeline
+│   ├── moments.ts                  # Featured Network Moments
+│   ├── archive.ts                  # Three product rings (16 items) + ring metadata
+│   ├── crew.ts                     # SEAson 1 composition, Bring-a-Crew rules, Founding Crew copy
+│   └── log.ts                      # Publication articles
+├── public/press/                   # Brand assets (colors.json + wordmark slots)
+├── tailwind.config.ts
 └── package.json
 ```
 
-### Server vs. Client Components
+## The Three-Pillar Frame
 
-Server components (no interactivity needed):
+The brand operates on three pillars; every editable surface should answer which one it serves.
 
-- `Hero`, `Marquee`, `Thesis`, `Pillars`, `Economics`, `Footer`, `SectionHeader`
+| Pillar | Surface | Lives in |
+| --- | --- | --- |
+| **Experience** — the Saturdays | `/episodes` | `lib/content.ts` (SEAson 1 episodes, itineraries, FAQ) |
+| **Product** — the Archive | `/archive` | `lib/archive.ts` (three rings) |
+| **Community** — the Crew | `/crew` | `lib/crew.ts` (composition, Bring-a-Crew, Founding Crew) |
 
-Client components (`"use client"`):
-
-- `Nav` — scroll listener for hide/show
-- `Timeline` — act expand/collapse state
-- `Scaling` — phase tab state + fleet viz
-- `Audience` — tab state for investor / partner / sponsor
-- `Contact` — form state
-
----
+Membership tiers (`lib/membership.ts`) describe themselves *across* the three pillars rather than as a flat feature list. The Network (`lib/network.ts`) is the partner-access layer that delivers Product and Experience benefits.
 
 ## Editing Content
 
-**All copy and data lives in `lib/content.ts`.** Edit there instead of digging through components:
+All copy + data lives in `lib/`. Edit there instead of digging into components.
 
-- `pillars` — four Miami cultural pillar cards
-- `timelineActs` — five acts of the day
-- `phases` — four fleet scaling phases
-- `revenueStack` — revenue distribution rows
-- `audiences` — investor / partner / sponsor pitches
+- `lib/config.ts` — site-wide constants (booking URL, brand line, emails)
+- `lib/content.ts` — SEAson 1 Episodes, Itineraries, Episode-page pillars, included rows, FAQ
+- `lib/membership.ts` — Crew / Captain / Commodore tiers (each with E×P×C benefits) + Membership FAQ
+- `lib/network.ts` — seven verticals + anchor partners + pipeline
+- `lib/moments.ts` — Featured Network Moments (FIFA 2026, Art Basel, F1 Miami, BVI, Faena, Coachella)
+- `lib/archive.ts` — three product rings (HVRBOR-direct, co-branded, partner)
+- `lib/crew.ts` — SEAson 1 composition snapshot, Bring-a-Crew rules, Founding Crew copy
+- `lib/log.ts` — publication articles with category + body
 
-Each export is typed — TypeScript will flag missing fields when you add items.
+Every export is typed — TypeScript flags missing fields when you add new items.
 
 ---
 
@@ -154,15 +189,21 @@ When you pick this up in Claude Code, the usual first-pass things to tackle:
 - Press: `press@hvrbor.club`
 - Crew: `hello@hvrbor.club`
 
-### Boilerplate (copy-ready, 48 words)
+### Boilerplate (copy-ready, 49 words)
 
-> HVRBOR.CLUB is a curated Miami flotilla — eight hours across Biscayne Bay, twelve seats per boat, one Saturday at a time. Miami Beach Marina out, Haulover Sandbar in the middle, Stiltsville on the way back. A soundtrack that knows what time it is. Launching June 2026. A GHXSTSHIP brand.
+> HVRBOR.CLUB is a year-round Miami membership built on a flotilla. Eight Saturdays per SEAson on Biscayne Bay, twelve seats per Episode, and a Network of priority access across Entertainment, Sports, Health and Wellness, Hospitality, Travel, Retail, and Nightlife. Sailing from Miami Beach Marina, June 20, 2026. A GHXSTSHIP brand.
 
 ### Tagline
 
 > Saturdays are for the sea.
 
-Lowercase "sea", period (not exclamation). Never paraphrase.
+Lowercase "sea", period (not exclamation). Never paraphrase. Always the refrain.
+
+### Brand Voice
+
+Five sources: **Tomorrowland** (ritual + worldbuilding), **Yacht Week** (flotilla earnestness, group euphoria), **American Express** (card-as-status, refined service), **Jungle Cruise** (theatrical destination naming, captain-narrator), **Tony Stark** (dry confidence, declarative cadence, never explains).
+
+Synthesis: **Upscale Adventure × Social Luxury.** Less explainer prose, more declarative. Drop schlubby asides. Let ritual carry weight. *Of course it works. Of course there is a number on the back of your card.*
 
 ### Brand Assets
 
