@@ -10,7 +10,8 @@ export type LogCategory =
   | "Network Moment"
   | "Crew Story"
   | "Partner Spotlight"
-  | "Harbor Note";
+  | "Harbor Note"
+  | "From the Archive";
 
 export type LogArticle = {
   slug: string;
@@ -100,6 +101,38 @@ export const logArticles: LogArticle[] = [
       "Captain casting opens at Art Basel Miami in December 2026. The location is the Faena penthouse. The window is the SEAson 1 Finale week — the same week the SEAson 1 recap film premieres and the Episode Finale / The Last Harbor sails the prior Saturday.",
       "Standby positions for the Captain application can be reserved now via the Apply page. Standby is not a guarantee — it is a place in the queue when applications go live. The first fifty Captain seats are SEAson 1 founding members and carry that designation in every future SEAson, including pricing locks at the founding rate for the duration of the membership.",
       "Commodore is invitation-only and is not part of the Captain casting window. Commodore invitations are extended to Captain members based on participation across the SEAson — Episodes sailed, Dockside Salons attended, Network engagement. The first Commodore class is named at Art Basel 2027.",
+    ],
+  },
+  {
+    slug: "the-crew-is-not-a-list",
+    title: "The Crew is not a list",
+    category: "Crew Story",
+    date: "April 23, 2026",
+    author: "The Harbor",
+    excerpt:
+      "What we mean when we say the Crew. How the room composes itself. Why the +1 matters more than the application.",
+    body: [
+      "The Crew is not a list of names. It is the answer to a question — who would you want at the sandbar at 4:20 PM, ankle-deep, with ninety seconds to say what you're working on?",
+      "SEAson 1 has ninety-six seats across eight Episodes. The composition isn't accidental. Roughly half the room is operators — founders, senior operators, early-employee number-twos across tech and finance and creative companies. About a fifth are wellness practitioners — the longevity-functional-medicine-recovery class that has made Miami the longevity capital of the United States. The rest is creative leadership, builders, and the variance that keeps the room useful — the doctor, the athlete, the academic.",
+      "The Crew curates for variance, not similarity. The room is more useful when it isn't one type.",
+      "The way new Crew gets in: the +1. Crew members can request a +1 on any open Episode. The +1 sails as a guest. If they sail again, they're cast as Crew themselves. Captain members sponsor one new Crew member per SEAson — that seat is held at the founding rate, and the number on their Mark is logged with yours. Commodore extends invitations. The Crew curates itself.",
+      "The applications matter less than the network. The room composes itself.",
+    ],
+  },
+  {
+    slug: "the-archive-is-the-product",
+    title: "The Archive is the Product",
+    category: "From the Archive",
+    date: "April 22, 2026",
+    author: "The Harbor",
+    excerpt:
+      "The first-party line, the co-branded capsules, and the partner network — read as one product surface.",
+    body: [
+      "The Archive is the product layer of HVRBOR.CLUB. It runs in three concentric rings.",
+      "The first ring is HVRBOR-direct. Owned IP. The Mark — the numbered card every Crew member carries. The Origin Capsule that ships with The Mark for SEAson 1 sailors. The Recovery Kit that productizes what every Episode runs on. The Future Archives Prints — Episode 07's 4×5 group portrait, framed, mailed sixty days later. The Stolen Gallery Flag — Episode 05's annual artist commission, gifted by raffle. The Atlas — the Miami guide, opening SEAson 2. The Book — three SEAsons of the Log, bound, in a numbered edition.",
+      "The second ring is co-branded capsules. One or two per SEAson. Tied to specific Episodes. Loro Piana × HVRBOR for the SEAson capsule. KITH × Episode 04. Eres × HVRBOR Swim. Stone Island pre-allocations through the SMS list.",
+      "The third ring is partner products and memberships — the Network, productized. Continuum panels. Tradewind credits. Othership annual passes. The Faena Resident Suite. Aman day-pass reciprocity. Each of these can be bundled into Captain inclusion or sold at the members rate.",
+      "The Archive is what Crew take home. The Saturdays are what they did. The Crew is who they were with. Three things at once.",
     ],
   },
   {

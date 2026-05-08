@@ -30,7 +30,7 @@ export default function GuestNav() {
         HVRBOR.CLUB<span className="text-cyan">.</span>
       </Link>
 
-      <div className="flex items-center gap-3 md:gap-7">
+      <div className="flex items-center gap-3 md:gap-6">
         <Link
           href="/episodes"
           className="hidden md:inline font-mono text-[12px] uppercase tracking-[0.2em] text-ink hover:text-cyan-deep transition-colors no-underline"
@@ -38,22 +38,22 @@ export default function GuestNav() {
           Episodes
         </Link>
         <Link
-          href="/network"
+          href="/archive"
           className="hidden md:inline font-mono text-[12px] uppercase tracking-[0.2em] text-ink hover:text-cyan-deep transition-colors no-underline"
         >
-          Network
+          Archive
+        </Link>
+        <Link
+          href="/crew"
+          className="hidden md:inline font-mono text-[12px] uppercase tracking-[0.2em] text-ink hover:text-cyan-deep transition-colors no-underline"
+        >
+          Crew
         </Link>
         <Link
           href="/membership"
           className="hidden md:inline font-mono text-[12px] uppercase tracking-[0.2em] text-ink hover:text-cyan-deep transition-colors no-underline"
         >
           Membership
-        </Link>
-        <Link
-          href="/log"
-          className="hidden md:inline font-mono text-[12px] uppercase tracking-[0.2em] text-ink hover:text-cyan-deep transition-colors no-underline"
-        >
-          Log
         </Link>
         <span className="hidden lg:inline border-l border-line pl-4 font-mono text-[10px] uppercase tracking-[0.2em] text-muted">
           Casting / SEAson 1

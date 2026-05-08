@@ -109,10 +109,43 @@ export default function AboutPage() {
       </section>
 
       <section className="bg-paper px-5 py-20 text-ink md:px-10 md:py-[120px]">
+        <div className="grid grid-cols-1 items-start gap-10 md:grid-cols-[1fr_1.4fr] md:gap-20">
+          <div>
+            <div className="mb-4 font-mono text-[11px] uppercase tracking-[0.3em] text-cyan-deep">
+              03 / The Crew
+            </div>
+            <h2 className="font-display text-[clamp(40px,6vw,88px)] uppercase leading-[0.9] tracking-[-0.02em]">
+              Who this
+              <br />
+              is for<span className="text-cyan">.</span>
+            </h2>
+          </div>
+          <div className="flex flex-col gap-6">
+            <p className="text-[18px] leading-relaxed">
+              The Crew is health-and-wealth-conscious young operators with
+              vast networks. Founders, senior operators, builders, wellness
+              practitioners, creative leadership. People in their thirties and
+              forties who think in basis points and breathwork in the same
+              breath. Quiet luxury, not loud. Earned, not inherited.
+            </p>
+            <p className="text-[18px] leading-relaxed">
+              They are connectors. They bring the next ten people. The
+              membership is built around that — Crew sponsors Crew, Captain
+              sponsors Crew at the founding rate, Commodore extends
+              invitations. The room composes itself.
+            </p>
+            <p className="font-sub text-[24px] leading-snug tracking-wide">
+              If you recognize yourself, you're already most of the way in.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-paper px-5 py-20 text-ink md:px-10 md:py-[120px]">
         <div className="grid grid-cols-1 items-start gap-10 md:grid-cols-[1.1fr_1fr] md:gap-20">
           <div>
             <div className="mb-4 font-mono text-[11px] uppercase tracking-[0.3em] text-cyan-deep">
-              03 / Method
+              04 / Method
             </div>
             <h2 className="font-display text-[clamp(40px,6vw,88px)] uppercase leading-[0.9] tracking-[-0.02em]">
               Designed,

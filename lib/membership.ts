@@ -1,14 +1,17 @@
 // ====================================================================
 // MEMBERSHIP TIERS
 // ====================================================================
-// SEAson 1 launches with three tiers. Pricing is the SEAson 1 founding
-// rate and increases at SEAson 2.
+// Three tiers, each mapped to the brand's three pillars:
+// Experience (the Saturdays), Product (the Archive), Community
+// (the Crew). Pricing is the SEAson 1 founding rate.
 // ====================================================================
 
 export type TierId = "crew" | "captain" | "commodore";
 
+export type BenefitPillar = "Experience" | "Product" | "Community";
+
 export type TierBenefit = {
-  category: "Episodes" | "Network" | "Harbor" | "Mark" | "Travel";
+  pillar: BenefitPillar;
   detail: string;
 };
 
@@ -36,20 +39,19 @@ export const membershipTiers: MembershipTier[] = [
       "Anyone who sails one Episode joins the Crew. The number on your Mark is permanent. The Log notes your name. The members rate is yours from then on.",
     benefits: [
       {
-        category: "Episodes",
-        detail: "Standby priority on future Episodes after your first sail",
+        pillar: "Experience",
+        detail:
+          "Standby priority on future Episodes after your first sail. Members rate on Bottle Episode bookings.",
       },
       {
-        category: "Network",
-        detail: "Members rate across the public reciprocity network",
+        pillar: "Product",
+        detail:
+          "A numbered matte-black Mark mailed within thirty days of your first Episode. Members rate across the public Network.",
       },
       {
-        category: "Harbor",
-        detail: "Read-only access to The Log and the SEAson archive",
-      },
-      {
-        category: "Mark",
-        detail: "Numbered matte-black card mailed after your first Episode",
+        pillar: "Community",
+        detail:
+          "A permanent entry in the Log. +1 privileges on open Episodes. Read-only access to The Harbor.",
       },
     ],
     cta: { label: "Claim a Seat", href: "/episodes" },
@@ -65,28 +67,19 @@ export const membershipTiers: MembershipTier[] = [
       "Captain locks the year. All eight Episodes. Every door in the Network. The Harbor concierge. A numbered brushed-steel Mark. The founding rate holds for the duration of the membership.",
     benefits: [
       {
-        category: "Episodes",
+        pillar: "Experience",
         detail:
-          "All eight SEAson 1 Episodes inclusive, with first allocation on Bottle Episodes and Crew Sails",
+          "All eight SEAson 1 Episodes inclusive. Bottle Episode credit toward one private charter. Pre-allocation on Mini-SEAson overlays — BVI, Croatia, Ibiza — opening 60 days ahead of public.",
       },
       {
-        category: "Network",
+        pillar: "Product",
         detail:
-          "Priority access across all seven verticals — Entertainment, Sports, Health & Wellness, Hospitality, Travel, Retail, Nightlife",
+          "Brushed-steel Mark with house-account credit. Member capsule allocation across co-branded drops. Priority access to the partner Network — Continuum, Tradewind, Othership, Faena, Aman, Edition.",
       },
       {
-        category: "Harbor",
+        pillar: "Community",
         detail:
-          "Full concierge access. Text-first, real human plus AI hybrid. Reservations, tickets, recommendations, recoveries.",
-      },
-      {
-        category: "Mark",
-        detail: "Numbered brushed-steel card. Pre-loaded house account.",
-      },
-      {
-        category: "Travel",
-        detail:
-          "Pre-allocation on geographic overlays — BVI, Croatia, Ibiza mini-SEAsons opening 60 days ahead of public",
+          "Sponsor one new Crew member per SEAson at the founding rate. Directory opt-in. Founding Crew designation in SEAson 1. Full Harbor concierge access — text-first, real human plus AI.",
       },
     ],
     cta: { label: "Apply for Captain", href: "/apply" },
@@ -97,34 +90,24 @@ export const membershipTiers: MembershipTier[] = [
     positioning: "03 / Invitation",
     price: "By invitation",
     priceCadence: "",
-    priceNote: "Limited to fifty numbered seats in SEAson 1.",
+    priceNote: "Limited to fifty numbered seats per SEAson.",
     description:
       "The black-card tier. Earned, not applied for. The paddock at the Grand Prix. The preview day at Basel. The off-market suite. The capsule before it ships. Fifty numbered seats per SEAson.",
     benefits: [
       {
-        category: "Episodes",
+        pillar: "Experience",
         detail:
-          "Private allocation per SEAson. Custom Bottle Episodes — choose your route, chef, and Crew",
+          "Private allocation per SEAson. Custom Bottle Episodes — choose your route, chef, and Crew. F1 international packages — Monaco, Las Vegas. LA Olympics 2028 pre-access.",
       },
       {
-        category: "Network",
+        pillar: "Product",
         detail:
-          "Curated tier — F1 paddock club, Art Basel preview day, Coachella green rooms, off-market suites, retail capsule pre-allocation",
+          "Brass-finished Mark. Loro Piana × HVRBOR capsule first allocation. Faena Resident Suite by lottery. Curated Network — paddock, preview day, off-market hospitality, retail-collab pre-allocation.",
       },
       {
-        category: "Harbor",
+        pillar: "Community",
         detail:
-          "Concierge with one-tap access to global partners. The Resident Suite at Faena Miami available on lottery basis.",
-      },
-      {
-        category: "Mark",
-        detail:
-          "Numbered brass card. Lower numbers indicate earlier Crew. Limited to fifty in SEAson 1.",
-      },
-      {
-        category: "Travel",
-        detail:
-          "First allocation on geographic overlays. F1 international packages — Monaco, Las Vegas. LA Olympics 2028 pre-access.",
+          "Extend invitations — the Commodore class names the next class. The Crew curates itself. Numbered, lower numbers indicate earlier members. Fifty seats per SEAson.",
       },
     ],
     cta: { label: "By Invitation Only", href: "#" },
@@ -150,7 +133,12 @@ export const membershipFaqs: MembershipFaqEntry[] = [
   {
     question: "How does Commodore selection work?",
     answer:
-      "By invitation only. Captain members earn invitation eligibility through participation across the SEAson — sailing Episodes, attending Dockside Salons, engaging the Network. The first Commodore class is named at Art Basel 2027.",
+      "By invitation only. The Commodore class names the next class — Captain members earn invitation eligibility through participation across the SEAson, sailing Episodes, attending Dockside Salons, engaging the Network. The first Commodore class is named at Art Basel 2027.",
+  },
+  {
+    question: "How does Bring-a-Crew work?",
+    answer:
+      "Crew members can request a +1 on any open Episode — the +1 sails as a guest, and if they sail again they're cast as Crew themselves. Captain members sponsor one new Crew member per SEAson at the founding rate. Commodore extends invitations. The Crew curates itself.",
   },
   {
     question: "Is the Captain fee refundable?",
@@ -160,7 +148,7 @@ export const membershipFaqs: MembershipFaqEntry[] = [
   {
     question: "What does the Captain fee include?",
     answer:
-      "All eight SEAson 1 Episodes (a $4,800+ value at single-seat pricing), Bottle Episode credit toward one private charter, Network priority access, Harbor concierge, your numbered Mark, and pre-allocation on geographic overlays — BVI, Croatia, Ibiza — when those open in 2027.",
+      "All eight SEAson 1 Episodes (a $4,800+ value at single-seat pricing), Bottle Episode credit toward one private charter, Network priority access, Harbor concierge, your numbered Mark, member capsule allocation, and pre-allocation on Mini-SEAson overlays — BVI, Croatia, Ibiza — when those open in 2027.",
   },
   {
     question: "What's the Mark?",

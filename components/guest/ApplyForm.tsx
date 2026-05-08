@@ -11,6 +11,7 @@ type FormState = {
   phone: string;
   miamiConnection: string;
   bottleEpisode: string;
+  plusOne: string;
   source: string;
   message: string;
   priorities: string[];
@@ -22,6 +23,7 @@ const initialState: FormState = {
   phone: "",
   miamiConnection: "",
   bottleEpisode: "",
+  plusOne: "",
   source: "",
   message: "",
   priorities: [],
@@ -200,6 +202,16 @@ export default function ApplyForm() {
               <option value="maybe">Maybe down the road</option>
               <option value="no">Not for me</option>
             </select>
+          </FormRow>
+
+          <FormRow label="The +1">
+            <input
+              type="text"
+              placeholder="Who would you bring on your first Saturday? Optional."
+              value={form.plusOne}
+              onChange={(e) => setForm({ ...form, plusOne: e.target.value })}
+              className="w-full border-none bg-paper px-5 py-5 text-[15px] text-ink outline-none transition-colors focus:bg-cyan"
+            />
           </FormRow>
 
           <FormRow label="Source">

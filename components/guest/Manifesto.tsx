@@ -31,9 +31,13 @@ export default function Manifesto() {
             None of that is an accident.
           </p>
           <p className="text-[18px] leading-relaxed">
-            The Saturdays are the proof. The Network, the Harbor, the Mark,
-            the Crew — those are the membership. Saturdays are eight days a
-            year. The Harbor is the other three-hundred-and-fifty-seven.
+            Three things at once. The Saturdays. The Archive. The Crew. The
+            flotilla is the proof. The Archive is what you take home. The
+            Crew is who you find in the room.
+          </p>
+          <p className="text-[18px] leading-relaxed">
+            Saturdays are eight days a year. The Archive is what they leave
+            you with. The Crew is who you keep.
           </p>
           <p className="font-sub text-[28px] leading-snug tracking-wide">
             A Miami Saturday with a producer credit. SEAson 1 has eight

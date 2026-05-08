@@ -20,17 +20,18 @@ export default function GuestFooter() {
       </div>
 
       <div className="mb-12 grid grid-cols-1 gap-[60px] md:grid-cols-3 md:gap-[80px]">
+        <FooterCol title="The Three">
+          <FooterLink href="/episodes">Episodes</FooterLink>
+          <FooterLink href="/archive">The Archive</FooterLink>
+          <FooterLink href="/crew">The Crew</FooterLink>
+        </FooterCol>
+
         <FooterCol title="Membership">
           <FooterLink href="/membership">Tiers + The Mark</FooterLink>
           <FooterLink href="/network">The Network</FooterLink>
-          <FooterLink href="/episodes">Episodes</FooterLink>
           <FooterLink href="/apply">Apply for Captain</FooterLink>
-        </FooterCol>
-
-        <FooterCol title="Read">
           <FooterLink href="/log">The Log</FooterLink>
           <FooterLink href="/about">About</FooterLink>
-          <FooterLink href="/press">Press Kit</FooterLink>
         </FooterCol>
 
         <FooterCol title="Connect">

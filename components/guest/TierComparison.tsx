@@ -72,11 +72,11 @@ export default function TierComparison() {
               <ul className="flex flex-col gap-4 border-t border-current pt-5">
                 {tier.benefits.map((b) => (
                   <li
-                    key={`${tier.id}-${b.category}`}
+                    key={`${tier.id}-${b.pillar}`}
                     className="grid grid-cols-[110px_1fr] gap-3 text-[14px] leading-relaxed"
                   >
                     <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-cyan-deep">
-                      {b.category}
+                      {b.pillar}
                     </span>
                     <span>{b.detail}</span>
                   </li>
