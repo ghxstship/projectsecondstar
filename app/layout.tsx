@@ -31,24 +31,26 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "HVRBOR.CLUB / SEAson 1 Premieres June 20, 2026",
+  title: "HVRBOR.CLUB / Saturdays are for the sea.",
   description:
-    "A curated Miami Flotilla Episode. Eight Saturdays across Biscayne Bay, 12 seats per Episode, one SEAson at a time. Launching June 20, 2026. A GHXSTSHIP brand.",
+    "A year-round Miami membership built on a flotilla. Eight Episodes per SEAson on Biscayne Bay. Priority access across seven networks — Entertainment, Sports, Health & Wellness, Hospitality, Travel, Retail, Nightlife. Captain casting opens at Art Basel.",
   keywords: [
     "hvrbor.club",
     "hvrbor",
+    "miami membership",
     "miami flotilla",
     "biscayne bay",
     "miami beach marina",
     "ghxstship",
     "season 1",
     "miami saturday",
+    "members club miami",
   ],
   authors: [{ name: "GHXSTSHIP Industries" }],
   openGraph: {
-    title: "HVRBOR.CLUB / SEAson 1 Premieres June 20, 2026",
+    title: "HVRBOR.CLUB / Saturdays are for the sea.",
     description:
-      "A curated Miami Flotilla Episode. Eight Saturdays across Biscayne Bay, 12 seats per Episode. Launching June 20, 2026.",
+      "A year-round Miami membership built on a flotilla. Eight Episodes. Seven networks. One Harbor. Captain casting opens at Art Basel.",
     type: "website",
   },
 };

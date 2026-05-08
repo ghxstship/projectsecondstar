@@ -1,11 +1,13 @@
 export default function Marquee() {
   const items = [
     "Biscayne Bay",
-    "Sandbar Anchor",
-    "Sunrise Breathwork",
-    "Soft Club Sets",
+    "Paddock Access",
+    "Art Basel Preview",
+    "BVI Mini-SEAson",
+    "Faena Resident Suite",
+    "Coachella Weekend",
     "Founder Flotillas",
-    "Skyline Return",
+    "The Harbor",
   ];
   const doubled = [...items, ...items];
 

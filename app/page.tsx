@@ -1,28 +1,26 @@
 import GuestNav from "@/components/guest/GuestNav";
-import GuestHero from "@/components/guest/GuestHero";
+import MembershipHero from "@/components/guest/MembershipHero";
 import Marquee from "@/components/Marquee";
 import Manifesto from "@/components/guest/Manifesto";
-import Timeline from "@/components/Timeline";
-import Experience from "@/components/guest/Experience";
-import Included from "@/components/guest/Included";
-import Calendar from "@/components/guest/Calendar";
-import FAQ from "@/components/guest/FAQ";
-import BookingCTA from "@/components/guest/BookingCTA";
+import Pillars3 from "@/components/guest/Pillars3";
+import NetworkMomentsGrid from "@/components/guest/NetworkMomentsGrid";
+import EpisodeTeaserGrid from "@/components/guest/EpisodeTeaserGrid";
+import LogPreviewGrid from "@/components/guest/LogPreviewGrid";
+import MembershipCTA from "@/components/guest/MembershipCTA";
 import GuestFooter from "@/components/guest/GuestFooter";
 
 export default function Home() {
   return (
     <main>
       <GuestNav />
-      <GuestHero />
+      <MembershipHero />
       <Marquee />
       <Manifesto />
-      <Timeline />
-      <Experience />
-      <Included />
-      <Calendar />
-      <FAQ />
-      <BookingCTA />
+      <Pillars3 />
+      <NetworkMomentsGrid limit={6} />
+      <EpisodeTeaserGrid limit={3} />
+      <LogPreviewGrid limit={3} />
+      <MembershipCTA />
       <GuestFooter />
     </main>
   );

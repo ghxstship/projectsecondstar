@@ -1,3 +1,4 @@
+import Link from "next/link";
 import {
   DECK_URL,
   PRESS_EMAIL,
@@ -10,7 +11,7 @@ export default function GuestFooter() {
   return (
     <footer className="bg-ink px-5 pb-10 pt-20 text-paper md:px-10">
       <div className="mb-12 border-b border-line pb-10">
-        <div className="relative font-display text-[clamp(56px,12vw,220px)] uppercase leading-[0.85] tracking-[-0.02em]">
+        <div className="relative font-display text-[clamp(64px,14vw,220px)] uppercase leading-[0.85] tracking-[-0.02em]">
           HVRBOR.CLUB<span className="text-cyan">.</span>
         </div>
         <p className="mt-6 font-sub text-[clamp(20px,2.5vw,32px)] leading-tight tracking-wide text-paper">
@@ -18,12 +19,18 @@ export default function GuestFooter() {
         </p>
       </div>
 
-      <div className="mb-12 grid grid-cols-1 gap-[60px] md:grid-cols-2 md:gap-[80px]">
-        <FooterCol title="Experience">
-          <FooterLink href="#day">The Day</FooterLink>
-          <FooterLink href="#included">What's Included</FooterLink>
-          <FooterLink href="#calendar">Calendar</FooterLink>
-          <FooterLink href="#faq">FAQ</FooterLink>
+      <div className="mb-12 grid grid-cols-1 gap-[60px] md:grid-cols-3 md:gap-[80px]">
+        <FooterCol title="Membership">
+          <FooterLink href="/membership">Tiers + The Mark</FooterLink>
+          <FooterLink href="/network">The Network</FooterLink>
+          <FooterLink href="/episodes">Episodes</FooterLink>
+          <FooterLink href="/apply">Apply for Captain</FooterLink>
+        </FooterCol>
+
+        <FooterCol title="Read">
+          <FooterLink href="/log">The Log</FooterLink>
+          <FooterLink href="/about">About</FooterLink>
+          <FooterLink href="/press">Press Kit</FooterLink>
         </FooterCol>
 
         <FooterCol title="Connect">
@@ -43,13 +50,13 @@ export default function GuestFooter() {
           HVRBOR LLC / A <span className="text-paper">GHXSTSHIP</span> Brand
           / Miami
         </div>
-        <div>Launch / June 2026</div>
-        <a
+        <div>Casting / SEAson 1 Open</div>
+        <Link
           href={DECK_URL}
           className="text-muted no-underline transition-colors hover:text-cyan"
         >
           Investors, Partners, Press →
-        </a>
+        </Link>
       </div>
 
       <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-muted/70">
@@ -86,16 +93,34 @@ function FooterLink({
   children: React.ReactNode;
   external?: boolean;
 }) {
-  const extraProps = external
-    ? { target: "_blank", rel: "noopener noreferrer" }
-    : {};
+  if (external) {
+    return (
+      <a
+        href={href}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="font-sub text-[18px] tracking-wide text-paper no-underline transition-colors hover:text-cyan"
+      >
+        {children}
+      </a>
+    );
+  }
+  if (href.startsWith("mailto:") || href.startsWith("#")) {
+    return (
+      <a
+        href={href}
+        className="font-sub text-[18px] tracking-wide text-paper no-underline transition-colors hover:text-cyan"
+      >
+        {children}
+      </a>
+    );
+  }
   return (
-    <a
+    <Link
       href={href}
-      {...extraProps}
       className="font-sub text-[18px] tracking-wide text-paper no-underline transition-colors hover:text-cyan"
     >
       {children}
-    </a>
+    </Link>
   );
 }

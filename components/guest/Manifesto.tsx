@@ -8,11 +8,11 @@ export default function Manifesto() {
         <h2 className="font-display text-[clamp(56px,9vw,140px)] uppercase leading-[0.85] tracking-[-0.02em]">
           We don't
           <br />
-          rent boats.
+          sell tickets.
           <br />
-          We write
+          We run
           <br />
-          chapters<span className="text-cyan">.</span>
+          the room<span className="text-cyan">.</span>
         </h2>
 
         <div className="flex flex-col gap-6 pt-2 md:pt-8">
@@ -31,9 +31,15 @@ export default function Manifesto() {
             food. The people on your boat are there for the same reason you
             are. That last part is not an accident.
           </p>
+          <p className="text-[18px] leading-relaxed">
+            The Saturdays are the proof point. The Network, the Harbor, the
+            Mark, the Crew — those are the reason the membership exists.
+            Saturdays are eight days a year. Membership is the other
+            three-hundred-and-fifty-seven.
+          </p>
           <p className="font-sub text-[28px] leading-snug tracking-wide">
-            This is a Miami Saturday with a producer credit. SEAson 1 has
-            eight Episodes. Casting is open.
+            This is a Miami Saturday with a producer credit. SEAson 1 has eight
+            Episodes. Captain casting opens at Art Basel.
           </p>
         </div>
       </div>
