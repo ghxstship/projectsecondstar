@@ -30,7 +30,7 @@ export const networkMoments: NetworkMoment[] = [
     tier: "Captain+",
     status: "Pre-allocation",
     description:
-      "Hard Rock Stadium hosts seven World Cup matches across SEAson 1's opening Episodes. Captain ticket allocation, Commodore hospitality suite. Group draw window opens in winter.",
+      "Hard Rock Stadium hosts seven matches across SEAson 1's opening Episodes. The Crew sails the Saturdays before. The seats are arranged. The hospitality is taken care of.",
   },
   {
     id: "art-basel-miami-2026",
@@ -41,7 +41,7 @@ export const networkMoments: NetworkMoment[] = [
     tier: "Commodore-only",
     status: "Announced",
     description:
-      "First-look access to the fair on Wednesday preview day. Gallery dinner allocations, the SEAson 1 recap film premiere, and the Captain casting open at the Faena penthouse.",
+      "First-look access on Wednesday. The dinners are accounted for. The SEAson 1 recap film premieres at the Faena penthouse. Captain casting opens the same week.",
   },
   {
     id: "f1-miami-2027",
@@ -52,7 +52,7 @@ export const networkMoments: NetworkMoment[] = [
     tier: "Captain+",
     status: "Pre-allocation",
     description:
-      "Race weekend programming. Suite access for Captain, Paddock Club for Commodore. Bracketed by a Race Weekend Episode the Saturday before.",
+      "Suite for Captain. Paddock Club for Commodore. The Race Weekend Episode sails the Saturday before. The transport is arranged.",
   },
   {
     id: "bvi-mini-seaSon",
@@ -63,7 +63,7 @@ export const networkMoments: NetworkMoment[] = [
     tier: "Captain+",
     status: "Pre-allocation",
     description:
-      "Three Episodes in three days across the British Virgin Islands. Captain pre-allocation opens 60 days before public, Commodore 90.",
+      "Three Episodes, three islands, three nights. Captain pre-allocation opens 60 days ahead. Commodore, 90.",
   },
   {
     id: "faena-resident-suite",
@@ -74,7 +74,7 @@ export const networkMoments: NetworkMoment[] = [
     tier: "Commodore-only",
     status: "Open",
     description:
-      "One suite reserved per Episode date for a Commodore who applies. Lottery if oversubscribed. The Centurion-tier benefit translated to hospitality.",
+      "One suite, held on Episode dates, for a Commodore who applies. Lottery if oversubscribed. The Centurion benefit, translated to hospitality.",
   },
   {
     id: "coachella-2027",
@@ -85,6 +85,6 @@ export const networkMoments: NetworkMoment[] = [
     tier: "Commodore-only",
     status: "Announced",
     description:
-      "HVRBOR programs the trip end to end. Flights, hospitality on the front, festival credentials, return charter back to Miami. Eight Commodore seats.",
+      "HVRBOR programs the trip. Flights, hospitality, credentials, return charter. Eight Commodore seats. Pack a hat.",
   },
 ];

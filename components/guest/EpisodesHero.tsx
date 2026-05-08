@@ -31,10 +31,11 @@ export default function EpisodesHero() {
 
         <div className="flex flex-col gap-6 pt-2 md:pt-8">
           <p className="text-[17px] leading-relaxed">
-            The flotilla product. A SEAson of twelve-seat vessels running one
-            designed day across Biscayne Bay — Miami Beach Marina out, Haulover
-            Sandbar in the middle, Stiltsville on the way back. Eight Episodes,
-            biweekly, June through October. Each one a destination of its own.
+            The flotilla. Miami Beach Marina out, Haulover Sandbar in the
+            middle, Stiltsville on the way back. Eight Episodes, biweekly,
+            June through October — each one a destination, each one its own
+            chapter of the Log. The Saturdays are choreographed dock to dock.
+            None of it is left to improvise.
           </p>
           <div className="flex flex-wrap items-center gap-4">
             <a

@@ -33,7 +33,7 @@ export const membershipTiers: MembershipTier[] = [
     priceCadence: "with first Episode booking",
     priceNote: "Earned, not paid",
     description:
-      "Anyone who sails one Episode joins the Crew. Members rate across the network, standby priority on future Episodes, and a permanent entry in the Log.",
+      "Anyone who sails one Episode joins the Crew. The number on your Mark is permanent. The Log notes your name. The members rate is yours from then on.",
     benefits: [
       {
         category: "Episodes",
@@ -62,7 +62,7 @@ export const membershipTiers: MembershipTier[] = [
     priceCadence: "/ year",
     priceNote: "SEAson 1 founding rate. Increases at SEAson 2.",
     description:
-      "The full operating system. All eight SEAson 1 Episodes inclusive, priority access across the seven-vertical Network, a Bottle Episode credit, and the full Harbor concierge.",
+      "Captain locks the year. All eight Episodes. Every door in the Network. The Harbor concierge. A numbered brushed-steel Mark. The founding rate holds for the duration of the membership.",
     benefits: [
       {
         category: "Episodes",
@@ -99,7 +99,7 @@ export const membershipTiers: MembershipTier[] = [
     priceCadence: "",
     priceNote: "Limited to fifty numbered seats in SEAson 1.",
     description:
-      "The black-card tier. Curated access — F1 paddock, Art Basel preview day, festival green rooms, off-market hospitality, retail-collab pre-allocations. Earned, not applied for.",
+      "The black-card tier. Earned, not applied for. The paddock at the Grand Prix. The preview day at Basel. The off-market suite. The capsule before it ships. Fifty numbered seats per SEAson.",
     benefits: [
       {
         category: "Episodes",

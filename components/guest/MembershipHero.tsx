@@ -39,14 +39,12 @@ export default function MembershipHero() {
               <br />
               Seven networks.
               <br />
-              One membership.
+              One Harbor.
             </span>
-            HVRBOR.CLUB is a year-round membership built on a Miami flotilla.
-            Eight Episodes per SEAson on Biscayne Bay. A Network of priority
-            access across Entertainment, Sports, Health and Wellness,
-            Hospitality, Travel, Retail, and Nightlife. The Harbor — the
-            operating system that holds it together. Captain casting opens at
-            Art Basel.
+            A year-round membership built on a Miami flotilla. Eight Saturdays
+            at sea, seven networks on land — and the Harbor that holds them
+            together. The Crew is being cast for SEAson 1. Captain casting
+            opens at Basel.
           </p>
           <div className="mt-8 flex flex-wrap items-center gap-4">
             <Link

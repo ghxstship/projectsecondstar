@@ -52,20 +52,19 @@ export default function ApplyForm() {
       <section className="bg-paper px-5 py-20 text-ink md:px-10 md:py-[140px]">
         <div className="mx-auto max-w-[720px] border-hard p-8 md:p-12">
           <div className="mb-6 font-mono text-[11px] uppercase tracking-[0.3em] text-cyan-deep">
-            Standby Confirmed
+            Standby Honored
           </div>
           <h2 className="font-display text-[clamp(48px,7vw,96px)] uppercase leading-[0.9] tracking-[-0.02em]">
-            On the standby list<span className="text-cyan">.</span>
+            Your number is held<span className="text-cyan">.</span>
           </h2>
           <p className="mt-6 font-sub text-[clamp(20px,2.5vw,32px)] leading-tight tracking-wide">
-            We'll be in touch before you need to start packing.
+            Casting opens at Basel. Pack accordingly.
           </p>
           <p className="mt-6 text-[16px] leading-relaxed">
-            Captain casting opens at Art Basel Miami in December 2026. Standby
-            positions are queued in order received. Lower numbers indicate
-            earlier applications. The first fifty Captain seats are SEAson 1
-            founding members and lock the founding rate for the duration of
-            their membership.
+            The standby is queued in the order received. Lower numbers
+            indicate earlier Crew. The first fifty Captain seats are SEAson 1
+            founding members — and the founding rate holds for the duration
+            of the membership.
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
             <a

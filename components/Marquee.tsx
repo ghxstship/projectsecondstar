@@ -1,13 +1,13 @@
 export default function Marquee() {
   const items = [
     "Biscayne Bay",
-    "Paddock Access",
-    "Art Basel Preview",
+    "The Christening",
+    "Paddock Club",
+    "Basel Preview",
     "BVI Mini-SEAson",
-    "Faena Resident Suite",
-    "Coachella Weekend",
-    "Founder Flotillas",
+    "The Resident Suite",
     "The Harbor",
+    "Saturdays at Sea",
   ];
   const doubled = [...items, ...items];
 

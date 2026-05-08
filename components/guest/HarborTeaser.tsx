@@ -21,10 +21,9 @@ export default function HarborTeaser() {
         </div>
         <div className="flex flex-col gap-6 pt-2 md:pt-8">
           <p className="text-[17px] leading-relaxed text-[#C5C5C0]">
-            The page you're on shows the anchor partners. The Harbor — the
-            membership operating system — holds the full Network and the
-            booking flows behind it. Concierge chat. The Mark Wallet. The Log.
-            The Crew Directory.
+            This page shows the anchors. The Harbor holds the rest — the full
+            Network, the booking flows, the concierge, the Crew Directory, the
+            Mark Wallet. Of course it is text-first. Of course it works.
           </p>
           <p className="text-[17px] leading-relaxed text-[#C5C5C0]">
             Captain members get full access. Crew get read-only. Opening

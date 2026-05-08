@@ -22,10 +22,10 @@ export default function MembershipCTA() {
 
         <div className="flex flex-col gap-8 pt-4 md:pt-10">
           <p className="text-[18px] leading-relaxed text-[#C5C5C0]">
-            SEAson 1 has eight Episodes and seven networks. Captain at the
-            founding rate locks the seat across both for the year — all eight
-            Episodes inclusive, priority access across the Network, the Harbor
-            concierge, the Mark.
+            Captain locks the year. All eight Episodes. Every door in the
+            Network. The Harbor concierge. A numbered Mark with your Origin
+            engraved on the back. The founding rate holds for the duration of
+            the membership — and rises with SEAson 2.
           </p>
           <div className="flex flex-col items-start gap-3">
             <Link
@@ -35,8 +35,8 @@ export default function MembershipCTA() {
               Apply for Captain →
             </Link>
             <p className="font-mono text-[11px] uppercase tracking-[0.2em] text-muted">
-              Standby positions held until casting opens at Art Basel, December
-              2026.
+              Standby is honored in the order received. Casting opens at
+              Basel '26.
             </p>
           </div>
           <Link

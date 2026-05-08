@@ -45,23 +45,23 @@ export default function AboutPage() {
           </div>
           <div className="flex flex-col gap-6">
             <p className="text-[18px] leading-relaxed">
-              Miami has more charters than any coastline in America. It also
-              has the longevity capital of the United States, the densest
-              founder economy outside of San Francisco, and the cultural
-              calendar of a city three times its size. What it didn't have was
-              someone running the room around all of it.
+              Miami has more charters than any coastline in America. It is the
+              longevity capital of the United States, the densest founder
+              economy outside of San Francisco, and the cultural calendar of a
+              city three times its size. It did not have a room around all of
+              that. We built one.
             </p>
             <p className="text-[18px] leading-relaxed">
               HVRBOR.CLUB started as a flotilla. Eight Saturdays a year on
-              Biscayne Bay, twelve seats, designed dock to dock. SEAson 1
-              premieres June 20, 2026. Episode 01 is The Origin.
+              Biscayne Bay. Twelve seats per Episode. The first Saturday is
+              June 20, 2026. The first Episode is The Origin. The Crew that
+              sails it carries that designation forward.
             </p>
             <p className="text-[18px] leading-relaxed">
-              The membership came next. The Crew earned its way on by sailing.
-              Captain locked an annual seat with the Network and the Harbor
-              concierge behind it. Commodore became the invitation-only tier
-              for the fifty-numbered black-card class. The card became the
-              point.
+              The membership followed. Crew is earned. Captain is the annual
+              tier with the Network and the Harbor behind it. Commodore is
+              fifty numbered seats. The card is the point. The Saturdays are
+              the proof.
             </p>
             <p className="font-sub text-[24px] leading-snug tracking-wide">
               The Saturdays are the proof. The membership is the product.

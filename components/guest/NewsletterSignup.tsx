@@ -32,8 +32,8 @@ export default function NewsletterSignup() {
             hears first<span className="text-cyan">.</span>
           </h2>
           <p className="mt-6 max-w-[480px] text-[16px] leading-relaxed text-[#C5C5C0]">
-            SEAson updates, new Episodes, the occasional Saturday worth
-            clearing. Low volume. Real content. Unsubscribe whenever.
+            SEAson updates. New Episodes. The Saturdays worth clearing. Low
+            volume. Unsubscribe whenever.
           </p>
         </div>
 

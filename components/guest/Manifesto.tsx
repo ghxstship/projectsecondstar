@@ -21,25 +21,23 @@ export default function Manifesto() {
             didn't have was a plot.
           </p>
           <p className="text-[18px] leading-relaxed">
-            Eight hours of chaos on a rented yacht is not a memory. It's an
-            afternoon you regret by Monday and a security deposit you're
-            texting about Tuesday.
+            A rented yacht is not a memory. It is, at best, a footnote — and
+            an apology to the deposit on Tuesday.
           </p>
           <p className="text-[18px] leading-relaxed">
             HVRBOR runs the other direction. Every Episode is set end to end.
             The route is planned. The music fits the hour. The food is real
-            food. The people on your boat are there for the same reason you
-            are. That last part is not an accident.
+            food. The Crew on your boat is there for the same reason you are.
+            None of that is an accident.
           </p>
           <p className="text-[18px] leading-relaxed">
-            The Saturdays are the proof point. The Network, the Harbor, the
-            Mark, the Crew — those are the reason the membership exists.
-            Saturdays are eight days a year. Membership is the other
-            three-hundred-and-fifty-seven.
+            The Saturdays are the proof. The Network, the Harbor, the Mark,
+            the Crew — those are the membership. Saturdays are eight days a
+            year. The Harbor is the other three-hundred-and-fifty-seven.
           </p>
           <p className="font-sub text-[28px] leading-snug tracking-wide">
-            This is a Miami Saturday with a producer credit. SEAson 1 has eight
-            Episodes. Captain casting opens at Art Basel.
+            A Miami Saturday with a producer credit. SEAson 1 has eight
+            Episodes. Captain casting opens at Basel.
           </p>
         </div>
       </div>
